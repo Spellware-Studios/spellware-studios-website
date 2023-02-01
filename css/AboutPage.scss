@@ -1,0 +1,61 @@
+@import "variables";
+
+.about-top-margin {
+    margin-top: 3.0em !important;
+}
+
+.about-title {
+    margin-bottom: 0.75em;
+}
+
+.about-team-card {
+    padding: 1em;
+    padding-bottom: 0em;
+}
+
+.about-image-container {
+    padding: 10px;
+}
+
+.about-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(black, 0.25);
+}
+
+.about-bottom-button {
+    margin-top: auto;
+    margin-bottom: 0px;
+}
+
+.about-team-image {
+    width: 100%;
+    border-radius: 50%;
+    margin: 1em auto;
+    padding: 2em;
+}
+
+.about-team-role {
+    text-transform: uppercase;
+    color: $primary;
+    font-size: 14pt;
+    font-weight: 600;
+}
+
+.about-team-name {
+    margin-bottom: 0px;
+    color: $text-color;
+    font-size: 18pt;
+    font-weight: 600;
+}
+
+.about-team-desc {
+    font-size: 12pt;
+    margin-bottom: 2em;
+    font-style: italic;
+}
+
+.about-contact-button {
+    margin-top: 1.0em;
+    margin-bottom: 4em;
+}

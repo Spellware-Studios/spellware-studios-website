@@ -1,0 +1,30 @@
+@import 'variables';
+
+.company-value-card {
+    background: none !important;
+    border-color: rgba(black, 0.0) !important;
+    padding: 1em;
+
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+
+    height: 100%;
+}
+
+.company-value-image {
+    margin: 1.5em;
+}
+
+.company-value-title {
+    font-size: 16pt;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    min-height: 2.5em;
+    text-align: center;
+}
+
+.company-value-text {
+    font-size: 12pt;
+    padding-left: 1em;
+}

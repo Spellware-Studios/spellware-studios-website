@@ -1,0 +1,83 @@
+@import 'variables';
+
+.footer-body {
+    background-color: $darker;
+    padding: 0.75em;
+    padding-bottom: 0em;
+}
+
+.footer-logo {
+    height: 60px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    font-size: 13pt;
+    font-weight: 100;
+}
+
+.footer-title {
+    //color: $primary;
+    margin-top: 2em;
+    font-size: 14pt;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer-group {
+    
+
+    >p {
+        margin: 0px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    >a {
+        margin: 0px;
+    }
+}
+
+.footer-link {
+    color: white;
+    cursor: pointer;
+    border-left: 2px solid $primary;
+    padding-left: 6px;
+
+    transition: border-left 0.1s;
+}
+
+.footer-link:hover {
+    color: $primary;
+    text-decoration: none;
+    border-left: 6px solid $primary;
+}
+
+.footer-social {
+    font-size: 26pt;
+    margin: 1em;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+    color: $primary;
+}
+
+.footer-social:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-copyright {
+    font-size: 8pt;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba($text-color, 0.5);
+}
+
+.footer-madeby {
+    font-size: 12pt;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 8px;
+    
+}

@@ -1,0 +1,31 @@
+/* Variables and bootstrap theme colors */
+
+$light: #21242c;
+$dark: darken($light, 4%);
+
+$darker: darken($dark, 2.5%);
+
+$highlight: rgba(white, 0.2);
+
+$overlay-bg: rgba($light, 0.93);
+
+$black: white;
+$white: black;
+$danger: rgb(255, 50, 50);
+
+$body-bg: $dark;
+$body-color: white;
+
+$primary: #01ffba !default;
+$secondary: #1984ff !default;
+
+$text-color: white;
+$text-semicolor: rgba(white, 0.8);
+
+// Other bootstrap stuff
+/*$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;*/

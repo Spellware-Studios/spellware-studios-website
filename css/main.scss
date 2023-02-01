@@ -1,0 +1,136 @@
+@import "variables";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Myriad Pro", "HelveticaNeue-Light", "Helvetica Neue Light",
+        "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.page-header {
+    background-color: $light;
+    height: 75px;
+}
+
+@include media-breakpoint-down(sm) {
+    .page-header {
+        height: 60px;
+    }
+}
+
+.ws-pre {
+    white-space: pre-wrap;
+}
+
+.page-content {
+    min-height: 100% !important;
+
+    background-position: center top;
+    background-size: cover;
+    //background-image: url(/repeating_background.png); // REPLACE WITH .SVG AND UNCOMMENT THIS! 
+    background-repeat: repeat-y;
+}
+
+.separator-primary {
+    margin: 2em;
+    margin-bottom: 5em;
+    margin-top: 5em;
+    border-bottom: 2px solid $primary;
+}
+
+.separator-small {
+    margin-bottom: 2.0em;
+    margin-top: 0.0em !important;
+    border-bottom: 2px solid $primary;
+}
+
+.roundbutton-secondary {
+    background: none;
+    background-color: rgba($primary, 0) !important;
+    border: 2px solid $primary !important;
+    color: $primary !important;
+    border-radius: 900px !important;
+    font-weight: 600 !important;
+
+    transition: color 1s background-color 1s;
+}
+
+.roundbutton-secondary:hover {
+    color: white !important;
+    background-color: $primary !important;
+}
+
+.roundbutton-primary {
+    border: 2px solid $primary !important;
+    border-radius: 900px !important;
+    font-weight: 600 !important;
+    color: $light !important;
+    background-color: $primary !important;
+
+    transition: color 1s background-color 1s;
+}
+
+.roundbutton-primary:hover {
+    color: white !important;
+}
+
+.mask-bottom-thick {
+    mask: url(/mask_black.png), url(/masks/mask_thick.svg);
+    mask-position: top, bottom;
+    mask-repeat: repeat-y, no-repeat;
+    mask-size: 100%, 100%;
+    mask-composite: exclude;
+
+}
+
+.mask-bottom-thin {
+    mask: url(/mask_black.png), url(/masks/mask_thin_u.svg);
+    mask-position: top, bottom;
+    mask-repeat: repeat-y, no-repeat;
+    mask-size: 100%, 100%;
+    mask-composite: exclude;
+}
+
+.mask-top-thick {
+    mask: url(/mask_black.png), url(/masks/mask_thick_reverse.svg);
+    mask-position: top, top;
+    mask-repeat: repeat-y, no-repeat;
+    mask-size: 100%, 100%;
+    mask-composite: exclude;
+}
+
+.mask-top-thin {
+    mask: url(/mask_black.png), url(/masks/mask_thin_reverse.svg);
+    mask-position: top, top;
+    mask-repeat: repeat-y, no-repeat;
+    mask-size: 100%, 100%;
+    mask-composite: exclude;
+}
+
+.article-title {
+    color: white !important;
+    margin-bottom: 0.75em;
+    margin-top: 0.2em;
+
+    p {
+        display: inline;
+    }
+}
+
+.article {
+    >p {
+        font-weight: 100;
+        font-size: 14pt;
+    }
+
+    p:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+.pre-wrap {
+    white-space: pre-wrap;
+}

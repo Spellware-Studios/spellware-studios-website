@@ -1,0 +1,95 @@
+@import "variables";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+$navbar-transition-time: 0.5s;
+
+.navbar-link {
+    align-items: center !important;
+    text-align: center !important;
+    justify-content: center !important;
+    vertical-align: middle;
+
+    margin-left: 0.5em !important;
+    margin-right: 0.5em !important;
+    padding-left: 0.5em !important;
+    padding-right: 0.5em !important;
+    border-bottom: 2px solid rgba($primary, 0.0) !important;
+
+    color: white !important;
+    cursor: pointer;
+}
+
+@include media-breakpoint-up(md) {
+    .navbar-link.active {
+        border-bottom: 2px solid $primary !important;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .navbar-link.active {
+        font-weight: bold;
+        color: $primary !important;
+    }
+}
+
+.navbar-link:hover {
+    color: $primary !important;
+}
+
+.navbar-logo {
+   
+    margin-right: 1.00em;
+    height: 50px;
+
+    transform: translateY(-2px);
+
+    transition: margin-top $navbar-transition-time, height $navbar-transition-time, margin-right $navbar-transition-time;
+}
+
+.navbar-logo-small {
+    
+    height: 36px;
+    transform: translateY(-1px);
+}
+
+.lang-picker-globe {
+    margin-right: 0.5em;
+}
+
+.navbar-language-dropdown {
+    text-transform: uppercase;
+    .dropdown-menu {
+        text-transform: none;
+        background-color: $light;
+
+        .dropdown-item {
+            color: $text-semicolor !important;
+        }
+        .dropdown-item:hover {
+            background-color: $highlight;
+        }
+    }
+}
+
+.navbar-body {
+    background: solid rgba(black, 0.0);
+    background-color: rgba(black, 0.0);
+    border-bottom: 1px solid rgba($highlight, 0.0);
+    transition: background-color $navbar-transition-time, 
+                border-bottom $navbar-transition-time, 
+                box-shadow $navbar-transition-time;
+}
+
+.navbar-body-opaque {
+    background-color: $overlay-bg;
+    border-bottom: 1px solid rgba($highlight, 0.0);
+    box-shadow: 0px 2px 10px rgba(black, 0.20);
+}
+
+// On mobile, the navbar should always have a black background
+@include media-breakpoint-down(sm) {
+    .navbar-body {
+        background-color: $overlay-bg;
+        border-bottom: 1px solid rgba($highlight, 0.0);
+    }
+}

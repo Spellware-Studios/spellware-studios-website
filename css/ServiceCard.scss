@@ -1,0 +1,13 @@
+@import 'variables';
+
+.service-card-image {
+    width: 100%;
+    transition: background-image 0.25s;
+    border-radius: 16px;
+    box-shadow: 5px 5px 10px rgba(black, 0.4);
+}
+
+.service-card-title {
+    font-size: 32pt;
+    margin-bottom: 0.5em;
+}
