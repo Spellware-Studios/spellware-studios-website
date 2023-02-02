@@ -80,7 +80,7 @@ class HomePage extends React.Component {
                            crossOrigin="anonymous" 
                            playsInline={true} 
                            preload="auto">
-                        <source src="media/spellware.webm" type="video/webm" />
+                        <source src="/media/spellware.webm" type="video/webm" />
                     </video>
 
                     <div className="pattern-overlay" ref={this.bgVideoPatternOverlay} />
