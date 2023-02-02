@@ -68,8 +68,8 @@ class Footer extends React.Component {
                     <div className="row">
                         <div className="col-md-12 d-flex">
                             <div className="m-auto">
-                                <a className="footer-social fab fa-linkedin" href="https://www.linkedin.com/company/SpellwareStudios" aria-hidden="false" alt="Spellware LinkedIn"></a>
-                                <a className="footer-social fab fa-twitter" href="https://www.twitter.com/SpellwareS" aria-hidden="false" alt="Spellware Twitter"></a>
+                                <a className="footer-social fab fa-linkedin" href="https://www.linkedin.com/company/SpellwareST" aria-hidden="false" alt="Spellware LinkedIn"></a>
+                                <a className="footer-social fab fa-twitter" href="https://www.twitter.com/SpellwareST" aria-hidden="false" alt="Spellware Twitter"></a>
                             </div>
                         </div>
                     </div>

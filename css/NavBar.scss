@@ -19,6 +19,32 @@ $navbar-transition-time: 0.5s;
     cursor: pointer;
 }
 
+/*
+.navbar-link:before {
+    display: block;
+    position: absolute;
+    
+    left: 0;
+    bottom: -1px;
+
+    width: 0;
+    height: 2px;
+
+    background: $primary;
+    
+    content: "";
+    
+    transition: width 0.2s;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: width;
+}
+
+.navbar-link:hover:before {
+    width: 100%;
+} */
+
 @include media-breakpoint-up(md) {
     .navbar-link.active {
         border-bottom: 2px solid $primary !important;

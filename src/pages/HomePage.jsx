@@ -88,7 +88,7 @@ class HomePage extends React.Component {
                     <div style={{ height: "140px" }} className="black-gradient" />
                     <div className="container top-container-home">
                         <div className="row" style={{ height: "90px" }} /> {/* Add some space under the navbar */}
-                        <div className="row">
+                        <div className="row" style={{ marginLeft: "-0.5em" }}>
                             <div className="col-md-8">
                                 <h1 className="slogan"><p>{t("home.slogan.start")}</p> <p className="slogan-accent">{t("home.slogan.accent")}</p><p>{t("home.slogan.end")}</p></h1>
                                 <p className="intro-text">{t("home.introtext")}</p>
@@ -102,7 +102,7 @@ class HomePage extends React.Component {
                     </div>
                 </div>
                 <div className="container feature-card-container">
-                    <div className="row">
+                    <div className="row feature-card-row">
                         <div className="col-md-4">
                             <a href="/services#gameplay" >
                                 <FeatureCard imageAlt={t("home.feature1.title")} icon="Controller" title={t("home.feature1.title")} text={t("home.feature1.text")} />
@@ -121,7 +121,7 @@ class HomePage extends React.Component {
                         
                     </div>
                     <div className="row" style={{marginTop: "45px"}}></div>
-                    <div className="row">
+                    <div className="row feature-card-row">
                         <div className="col-md-4">
                             <a href="/services#engine" >
                                 <FeatureCard imageAlt={t("home.feature4.title")} icon="Gear" title={t("home.feature4.title")} text={t("home.feature4.text")} />
