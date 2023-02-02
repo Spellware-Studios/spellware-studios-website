@@ -13,7 +13,7 @@
   publish = "dist/"
 
   # Default build command.
-  command = "npm run build"
+  command = "npm run buildfake"
 
   # Directory with the serverless functions, including background functions,
   # to deploy to AWS. This is relative to the base directory if one has been set, 
