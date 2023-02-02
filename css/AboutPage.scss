@@ -17,10 +17,20 @@
     padding: 10px;
 }
 
+.technology-image {
+    height: 100px;
+    margin: 0.5em 3em;
+}
 .about-image {
     width: 100%;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(black, 0.25);
+}
+
+.about-image-row {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .about-bottom-button {

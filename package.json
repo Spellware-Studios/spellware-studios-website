@@ -1,5 +1,5 @@
 {
-    "name": "dreamforge-website",
+    "name": "spellware-website",
     "version": "1.0.1",
     "main": "index.js",
     "private": true,
@@ -9,7 +9,7 @@
         "build": "react-static build",
         "analyze": "react-static build --analyze",
         "serve": "serve dist -p 3000",
-        "predeploy": "npm run build && echo dreamforge.be > ./dist/CNAME",
+        "predeploy": "npm run build && echo spellwarestudios.com > ./dist/CNAME",
         "deploy": "npm run predeploy && gh-pages -d dist -b live",
         "deploytest": "npm run predeploy && gh-pages -d dist -b test"
     },
@@ -23,6 +23,7 @@
         "nodemailer": "^6.4.17",
         "react": "^16.9.0",
         "react-bootstrap": "^1.4.0",
+        "react-bootstrap-icons": "^1.10.2",
         "react-cookie-consent": "^6.2.2",
         "react-dom": "^16.9.0",
         "react-helmet": "^6.1.0",

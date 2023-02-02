@@ -34,16 +34,23 @@ class AboutPage extends React.Component {
                         </div> */}
                     </div>
 
-                    <div className='row'>
-                        <div className='col-md-6 offset-md-3' style={{ marginTop: "2.5em" }}>
-                            <a href="/contact" className="btn roundbutton-primary title-button clickbait-button about-bottom-button">{t("home.button.contact")}</a>    
-                        </div>    
-                    </div>                    
+                    <div className="row d-flex flex-row about-image-row">
+                        
+                            <Image className="technology-image" src='/media/images/unity.png' />
+                        
+                        
+                            <Image className="technology-image" src='/media/images/unreal.png' />
+                        
+                            <Image className="technology-image" src='/media/images/oculus.png' />
+                        
+                    </div>       
                      <div className="row">
-                        <div className="col-md-12">
-                            <a href="/contact" className="btn roundbutton-primary title-button clickbait-button about-bottom-button d-block d-lg-none">{t("home.button.contact")}</a>
+                        <div className="col-md-6 offset-md-3">
+                            <a href="/contact" className="btn roundbutton-secondary title-button clickbait-button about-contact-button d-block about-top-margin">{t("home.button.contact")}</a>
                         </div>
                     </div>
+
+                    {/*
                     <div className="row">
                         <div className="col-md-8 offset-md-2">
                             <div className="separator-primary" />
@@ -106,24 +113,14 @@ class AboutPage extends React.Component {
                             <p className="about-team-role text-center d-none d-md-block">{t("about.kenzo.role")}</p>
                         </div>
                     </div>
-                    
-                    {/* <div className="row">
-                        <div className="col-md-4">
-                            <p className="about-team-desc d-none d-md-block">{t("about.quinten.desc")}</p>
-                        </div>
-                        <div className="col-md-4">
-                            <p className="about-team-desc d-none d-md-block">{t("about.pj.desc")}</p>
-                        </div>
-                        <div className="col-md-4">
-                            <p className="about-team-desc d-none d-md-block">{t("about.kenzo.desc")}</p>
-                        </div>
-                    </div> */}
 
                     <div className="row">
                         <div className="col-md-6 offset-md-3">
                             <a href="/contact" className="btn roundbutton-secondary title-button clickbait-button about-contact-button d-block about-top-margin">{t("home.button.contact")}</a>
                         </div>
                     </div>
+
+                    */}
                 </div>
                 <PageSpacer />
             </React.Fragment>);

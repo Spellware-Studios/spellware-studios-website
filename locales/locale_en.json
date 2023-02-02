@@ -25,14 +25,26 @@
     "home.slogan.end": "? We got you covered.",
     "home.button.portfolio": "View Portfolio",
     "home.button.contact": "Get In Touch",
+    
     "home.feature1.title": "Gameplay",
     "home.feature1.text": "We'll work with you to prototype, implement and test gameplay mechanics and features. Together we can create engaging and dynamic gameplay that will captivate players of all kinds.",
-    "home.feature2.title": "Engine & Graphics",
-    "home.feature2.text": "Whether you need help in maintaining your in-house engine, or if you want to modify an existing engine. Our team has the expertise you can rely on. Need a custom render pipeline? Say no more.",
-    "home.feature3.title": "Netcode & Backend",
+    
+    "home.feature2.title": "Graphics",
+    "home.feature2.text": "We offer graphics programming services for the video game industry.\n\nOur team of expert programmers are well-versed in the use of shaders, lighting, and materials to create advanced visual effects and ensure optimal performance on various platforms",
+    
+    "home.feature3.title": "Backend & Networking",
     "home.feature3.text": "Looking to bring a multiplayer mode to your game? We can do the legwork for you. We also architect backend solutions for games that require more advanced lobby systems, and even MMO's.",
-    "home.feature4.title": "Porting",
-    "home.feature4.text": "Looking to hire someone to port your game to a new platform? We can handle both the technical side and rework the control scheme.",
+    
+    "home.feature4.title": "Engine",
+    "home.feature4.text": "Our company has experience designing, implementing, and maintaining the underlying game engine that powers a game.\n\nThis can include creating custom game engines from scratch, or modifying and extending existing engines to create the technical foundation for game developers to bring their ideas to life.",
+    
+    "home.feature5.title": "Optimization & Bugfixing",
+    "home.feature5.text": "Our team will identify and fix bottlenecks, bugs and glitches that can impact player experience.\n\nFrom memory management to code refactoring, we will make sure your game runs smoothly and efficiently, providing the players with a polished and enjoyable experience on any platform.",
+
+    "home.feature6.title": "Porting",
+    "home.feature6.text": "Looking to hire someone to port your game to a new platform? We can handle both the technical side and rework the control scheme.",
+    
+
     "home.article1.title.start": "Expand your ",
     "home.article1.title.accent": "online presence",
     "home.article1.title.end": ".",
@@ -40,7 +52,7 @@
     "home.article1.text.p2": "We deliver a customized corporate identity including logos, fonts, business cards and more. The total package is just as important to us as the details. ",
     "home.clickbait": "Start your online adventure here!",
     "home.article2.title.start": "Our ",
-    "home.article2.title.accent": "Strength",
+    "home.article2.title.accent": "Values",
     "home.article2.title.end": "",
     "home.article2.text.p1": "",
     "home.companyvalue1.title": "Customer focus",

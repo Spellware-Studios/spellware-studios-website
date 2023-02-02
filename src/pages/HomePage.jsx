@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet';
 import FeatureCard from "../components/FeatureCard";
 import CompanyValueCard from "../components/CompanyValueCard";
 
-
 import "../../css/HomePage.scss"
 import AppLoadingOverlay from "../components/AppLoadingOverlay";
 
@@ -104,36 +103,41 @@ class HomePage extends React.Component {
                 </div>
                 <div className="container feature-card-container">
                     <div className="row">
-                        <div className="col-md-2">
+                        <div className="col-md-4">
                             <a href="/services#gameplay" >
-                                <FeatureCard imageAlt={t("home.feature1.title")} icon="/icons/game-controller.svg" hoverIcon="/icons/game-controller.svg" title={t("home.feature1.title")} text={t("home.feature1.text")} />
+                                <FeatureCard imageAlt={t("home.feature1.title")} icon="Controller" title={t("home.feature1.title")} text={t("home.feature1.text")} />
                             </a>
                         </div>
-                        <div className="col-md-2">
-                            <a href="/services#engine" >
-                                <FeatureCard imageAlt={t("home.feature2.title")} icon="/icons/cogwheels.svg" hoverIcon="/icons/cogwheels.svg" title={t("home.feature2.title")} text={t("home.feature2.text")} />
+                        <div className="col-md-4">
+                            <a href="/services#graphics" >
+                                <FeatureCard imageAlt={t("home.feature2.title")} icon="CameraVideo" title={t("home.feature2.title")} text={t("home.feature2.text")} />
                             </a>
                         </div>
-                        <div className="col-md-2">
+                        <div className="col-md-4">
                             <a href="/services#backend" >
-                                <FeatureCard imageAlt={t("home.feature3.title")} icon="/icons/server.svg" hoverIcon="/icons/server.svg" title={t("home.feature3.title")} text={t("home.feature3.text")} />
+                                <FeatureCard imageAlt={t("home.feature3.title")} icon="HddNetwork" title={t("home.feature3.title")} text={t("home.feature3.text")} />
                             </a>
                         </div>
-                        <div className="col-md-2">
-                            <a href="/services#simulations">
-                                <FeatureCard imageAlt={t("home.feature4.title")} icon="/icons/smartphone.svg" hoverIcon="/icons/smartphone.svg" title={t("home.feature4.title")} text={t("home.feature4.text")} />
+                        
+                    </div>
+                    <div className="row" style={{marginTop: "45px"}}></div>
+                    <div className="row">
+                        <div className="col-md-4">
+                            <a href="/services#engine" >
+                                <FeatureCard imageAlt={t("home.feature4.title")} icon="Gear" title={t("home.feature4.title")} text={t("home.feature4.text")} />
                             </a>
                         </div>
-                        <div className="col-md-2">
-                            <a href="/services#simulations">
-                                <FeatureCard imageAlt={t("home.feature4.title")} icon="/icons/smartphone.svg" hoverIcon="/icons/smartphone.svg" title={t("home.feature4.title")} text={t("home.feature4.text")} />
+                        <div className="col-md-4">
+                            <a href="/services#optimization" >
+                                <FeatureCard imageAlt={t("home.feature5.title")} icon="Bug" title={t("home.feature5.title")} text={t("home.feature5.text")} />
                             </a>
                         </div>
-                        <div className="col-md-2">
-                            <a href="/services#simulations">
-                                <FeatureCard imageAlt={t("home.feature4.title")} icon="/icons/smartphone.svg" hoverIcon="/icons/smartphone.svg" title={t("home.feature4.title")} text={t("home.feature4.text")} />
+                        <div className="col-md-4">
+                            <a href="/services" >
+                                <FeatureCard imageAlt={t("home.feature6.title")} icon="Phone" title={t("home.feature6.title")} text={t("home.feature6.text")} />
                             </a>
                         </div>
+                        
                     </div>
                 </div>
                 <div className="container">

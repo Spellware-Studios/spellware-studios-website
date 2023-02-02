@@ -33,7 +33,7 @@ class ServiceCard extends Component {
     }
 
     renderImage(left){
-        return <div className={left ? "col-md-5" : "col-md-5 offset-md-1"} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} >
+        return <div className={left ? "col-md-5 d-flex flex-column" : "col-md-5 offset-md-1 d-flex flex-column"} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} >
                     <Image className="service-card-image" src={this.state.isHovering ? this.props.hoverIcon : this.props.icon} />
                 </div>;
     }

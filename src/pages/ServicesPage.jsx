@@ -48,7 +48,7 @@ class ServicesPage extends React.Component {
                 </div>
             </div>
 
-            <div className="container" style={{ marginTop: "40px" }}>
+            <div className="container">
 
                 <div className="row pre-wrap service-row" id="gameplay">
                     <ServiceCard imgleft={this.state.width <= this.state.minwidth} icon="/media/images/gameplay.webp" hoverIcon="/media/images/gameplay.webp" title={t("services.feature1.title")} text={t("services.feature1.text")} />
