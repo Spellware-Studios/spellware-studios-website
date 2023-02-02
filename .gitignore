@@ -4,7 +4,7 @@ dist/
 tmp/
 artifacts/
 
-package-lock.json
+# package-lock.json
 
 # Local Netlify folder
 .netlify

@@ -38,11 +38,11 @@
         "react-static-plugin-reach-router": "^7.2.0",
         "react-static-plugin-react-router": "^7.4.2",
         "react-static-plugin-sitemap": "^7.2.0",
-        "react-static-plugin-source-filesystem": "^7.2.0"
+        "react-static-plugin-source-filesystem": "^7.2.0",
+		"react-static-plugin-sass": "^7.3.0"
     },
     "devDependencies": {
         "gh-pages": "^3.1.0",
-        "react-static-plugin-sass": "^7.3.0",
         "serve": "^14.2.0"
     }
 }
