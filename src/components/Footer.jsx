@@ -24,9 +24,16 @@ class Footer extends React.Component {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-10 offset-md-0">
-                            <h2 className="footer-text">Got an idea that you're eager to try out? <a href="/contact">Get in touch with us!</a></h2>
+                        <div className="col-md-4 flex-column d-flex">
+                            <h2 className="footer-text m-auto text-left">Got an idea that you're eager to try out? </h2>
                         </div>
+                        <div className="col-md-4">
+                            <a href="/contact" className="btn roundbutton-secondary title-button clickbait-button">{t("home.button.contact")}</a>
+                        
+                        </div>
+                    </div>
+                    <div className='row' style={{marginTop: "20px"}}>
+                        
                     </div>
                     <div className="row">
                         <div className="col-md-3">
