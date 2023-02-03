@@ -1,5 +1,5 @@
 @import "variables";
-
+@import "node_modules/bootstrap/scss/bootstrap";
 
 .portfolio-title {
     font-size: 40pt;
@@ -10,4 +10,17 @@
 .portfolio-phtext {
     font-size: 20pt;
     font-weight: 100;
+}
+
+.portfolio-clickable-image .service-card-image {
+    transition: box-shadow 0.25s, transform 0.25s;
+
+    box-shadow: 1px 1px 4px rgba(black, 0.30);
+}
+
+@include media-breakpoint-up(md) {
+    .portfolio-clickable-image:hover .service-card-image  {
+        box-shadow: 7px 7px 20px rgba(black, 0.30);
+        transform: translate(-5px, -5px);
+    }
 }

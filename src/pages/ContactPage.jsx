@@ -116,7 +116,7 @@ class ContactPage extends React.Component {
             <React.Fragment>
                 <Helmet>
                     <title>{t("nav.contact") + " - " + t("maintitle")}</title>
-                    <meta name="Description" content="Kom langs met je idee, dan maken wij van jouw droom een realiteit." />
+                    <meta name="Description" content="We are a passionate group of freelance developers for hire, ready to bring you the greatest technical solutions for your game or simulation." />
                 </Helmet>
                 <PageHeader />
 

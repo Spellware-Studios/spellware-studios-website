@@ -24,20 +24,22 @@ class PortfolioPage extends React.Component {
                 </div>;
     }
 
-    renderImage(left, image){
+    renderImage(left, image, link){
         return <div className={left ? "col-md-5 d-flex flex-column" : "col-md-5 offset-md-1 d-flex flex-column"}>
-                    <Image className="service-card-image m-auto" src={image} />
+                    <a href={link} className="m-auto portfolio-clickable-image" target="_blank">
+                        <Image className="service-card-image m-auto" src={image} />
+                    </a>
                 </div>;
     }
 
-    renderPortion(textLeft, image, title, inner) {
+    renderPortion(textLeft, image, title, link, inner) {
         return (
             <React.Fragment>
                 <link rel="preload" as="image" href={image} />
                 <div className="d-none d-md-block" />
                 { textLeft ? 
-                    <React.Fragment>{this.renderImage(true, image)}{this.renderText(true, inner, title)}</React.Fragment> :
-                    <React.Fragment>{this.renderText(false, inner, title)}{this.renderImage(false, image)}</React.Fragment>
+                    <React.Fragment>{this.renderImage(true, image, link)}{this.renderText(true, inner, title)}</React.Fragment> :
+                    <React.Fragment>{this.renderText(false, inner, title)}{this.renderImage(false, image, link)}</React.Fragment>
                 }
             </React.Fragment>
         );
@@ -48,7 +50,7 @@ class PortfolioPage extends React.Component {
         return (<React.Fragment>
                     <Helmet>
                         <title>{t("nav.portfolio") + " - " + t("maintitle")}</title>
-                        <meta name="Description" content="Een overzicht van al onze werken die wij gerealiseerd hebben. Websites, applicaties en huisstijlen."/>
+                        <meta name="Description" content="We are a passionate group of freelance developers for hire, ready to bring you the greatest technical solutions for your game or simulation."/>
                     </Helmet>
                     <PageHeader />
                     
@@ -60,19 +62,19 @@ class PortfolioPage extends React.Component {
                         </div>
 
                         <div className="row pre-wrap service-row" id="graphics">
-                            {this.renderPortion(false, "/media/images/earthlings.jpg", "Earthlings",
+                            {this.renderPortion(false, "/media/images/earthlings.jpg", "Earthlings", "https://earthlings.land/?page=home",
                                 <React.Fragment>
-                                    <p>Earthlings is a social MMO built using <b>Unreal Engine 5</b> where you'll have the freedom to create and customize your own land plots, visit a variety of unique and immersive environments, and interact with other players in real time. With our team's expertise in gameplay, graphics and backend programming, we are building a game that will be a social and immersive experience, that allows players to express themselves, create and collaborate in a vast and living world.</p>
-                                    <p>We got put in charge of all development by our client and are working on implementing various different tasks such as character movement and abilities, Server transitions and back-end, Mobs and NPCs, Inventory, Questing system, Vehicles and so much more!</p>
+                                    <p>Earthlings is one of our ongoing projects. It’s a social MMO built in <b>Unreal Engine 5</b> where you’ll have the freedom to create and customize your own land plots, visit a variety of unique and immersive environments, and interact with other players in real time. With our team's expertise in gameplay, graphics and backend programming, we are building a game that will be a highly social and immersive experience. Allowing players to express themselves by creating and collaborating in a vast and living world.</p>
+                                    <p>We’ve been trusted by our client to be in charge of the entire development of this project. And we’re currently working on implementing various different tasks such as character movement, abilities, server transitions and back-end, mobs and NPCs, inventory systems, questing systems, vehicles and so much more!</p>
                                     <a href="https://www.earthlings.land/">Visit the Earthlings website for more information.</a>
                                 </React.Fragment>
                             )}
                         </div>
 
                         <div className="row pre-wrap service-row" id="graphics">
-                            {this.renderPortion(true, "/media/images/vr4fire.jpg", "VR4Fire",
+                            {this.renderPortion(true, "/media/images/vr4fire.jpg", "VR4Fire", "https://safety4all.be/opleidingen/vr/",
                                 <React.Fragment>
-                                    <p>VR4Fire is a VR fire simulation we developed for our client using Unity, designed to teach individuals the appropriate actions to take during fire emergencies in various scenarios. This simulation immerses users in a realistic virtual environment, allowing them to experience a fire breakout and practice their response in a safe and controlled setting. The simulation includes multiple scenarios, such as hospitals and warehouses, and users can experience the spread of fire and smoke, as well as learn how to use fire safety equipment.</p>
+                                    <p>VR4Fire is a VR fire simulation we developed for our client using Unity. It is designed to teach individuals the appropriate actions to take during fire emergencies in various scenarios. This simulation immerses users in a realistic virtual environment, allowing them to experience a fire breakout and practice their response in a safe and controlled setting. The simulation includes multiple scenarios, such as hospitals and warehouses. Users can experience the spread of fire and smoke, as well as learn how to use fire safety equipment.</p>
                                     <a href="https://www.youtube.com/watch?v=ZAYpQc3kI5I">Watch the VR4Fire commercial on YouTube.</a>
                                 </React.Fragment>
                             )}
@@ -86,24 +88,28 @@ class PortfolioPage extends React.Component {
                         </div>
 
                         <div className="row">
-                            <div className="col-md-12">
-                                <p>Other games which members of our team have worked on include <b>Baldur's Gate III</b> and <b>Wasteland 3</b>.</p>
+                            <div className="col-md-8">
+                                <p>Other games that members of our team have worked on include <b>Baldur's Gate III</b> and <b>Wasteland 3</b>.
+                                Click the images below to find out more information about each project.
+                                </p>
+                                <div style={{marginBottom: "50px" }} />
                             </div>
                         </div>
 
+                    
                         <div className="row">
                             <div className="col-md-6 d-flex flex-column">
-                                <a href="https://press.baldursgate3.game/" className="m-auto">
-                                    <Image className="service-card-image m-auto" src="/media/images/bg3.webp" />
-                                </a>
-                            </div>
-                            <div className="col-md-6 d-flex flex-column">
-                                <a href="https://store.steampowered.com/app/719040/Wasteland_3/" className="m-auto">
+                                <a href="https://store.steampowered.com/app/719040/Wasteland_3/" className="m-auto portfolio-clickable-image" target="_blank">
                                     <Image className="service-card-image m-auto" src="/media/images/wasteland3.webp" />
                                 </a>
                             </div>
+                            <div className="col-md-6 d-flex flex-column">
+                                <a href="https://press.baldursgate3.game/" className="m-auto portfolio-clickable-image" target="_blank">
+                                    <Image className="service-card-image m-auto" src="/media/images/bg3.webp" />
+                                </a>
+                            </div>
                         </div>
-                        <div style={{marginBottom: "20px" }} />
+                        <div style={{marginBottom: "60px" }} />
                         
                         {/*<div className="row">
                             <div className="col-md-4 offset-md-4 text-center">

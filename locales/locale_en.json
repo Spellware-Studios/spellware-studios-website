@@ -19,54 +19,63 @@
     "footer.cookiepolicy": "Cookie policy",
     "footer.madeby": "Website designed by Spellware Studios.",
     "footer.copyright": "Copyright © 2023 Spellware Studios. All rights reserved.",
-    "home.introtext": "We are a co-development studio of passionate programmers and game developers dedicated to helping you create immersive and engaging experiences for players around the world.",
-    "home.slogan.start": "Got an ",
-    "home.slogan.accent": "idea",
-    "home.slogan.end": "? We got you covered.",
+    "home.introtext": "We are a passionate group of freelance developers, dedicated to helping you create immersive and engaging experiences for your game or simulation.",
+    "home.slogan.start": "Looking to ",
+    "home.slogan.accent": "boost",
+    "home.slogan.end": " your game projects?",
     "home.button.portfolio": "View Portfolio",
     "home.button.contact": "Get In Touch",
     
-    "home.feature1.title": "Gameplay",
-    "home.feature1.text": "We'll work with you to prototype, implement and test gameplay mechanics and features. Together we can create engaging and dynamic gameplay that will captivate players of all kinds.",
+    "home.feature1.title": "Gameplay Programming",
+    "home.feature1.text": "Gameplay programming is one of our main specializations. We work together with our clients to implement, optimize, and test both gameplay mechanics and features.",
     
-    "home.feature2.title": "Graphics",
-    "home.feature2.text": "We offer graphics programming services for the video game industry.\n\nOur team of expert programmers are well-versed in the use of shaders, lighting, and materials to create advanced visual effects and ensure optimal performance on various platforms",
+    "home.feature2.title": "Graphics Programming",
+    "home.feature2.text": "Our team of expert programmers are well-versed in the use of shaders, lighting, and materials. This way we can provide you high quality, advanced visual effects and ensure optimal performance on your various platforms.",
     
     "home.feature3.title": "Backend & Networking",
-    "home.feature3.text": "Looking to bring a multiplayer mode to your game? We can do the legwork for you. We also architect backend solutions for games that require more advanced lobby systems, and even MMO's.",
+    "home.feature3.text": "We use a variety of programming languages and tools to create stable, scalable, and secure backend systems. Our goal is to help you by creating seamless online experiences for your players.",
     
-    "home.feature4.title": "Engine",
-    "home.feature4.text": "Our company has experience designing, implementing, and maintaining the underlying game engine that powers a game.\n\nThis can include creating custom game engines from scratch, or modifying and extending existing engines to create the technical foundation for game developers to bring their ideas to life.",
+    "home.feature4.title": "Engine Programming",
+    "home.feature4.text": "Another one of our specializations is the designing, implementing, and maintenance of game engines.\nThis includes modifying and extending your existing game engine. Or even creating a custom game engine from scratch.",
     
     "home.feature5.title": "Optimization & Bugfixing",
-    "home.feature5.text": "Our team will identify and fix bottlenecks, bugs and glitches that can impact player experience.\n\nFrom memory management to code refactoring, we will make sure your game runs smoothly and efficiently, providing the players with a polished and enjoyable experience on any platform.",
+    "home.feature5.text": "We have experts who can identify and fix bugs, bottlenecks and glitches that can impact your players’ experience.\nFrom memory management to code refactoring, we will make sure your game runs smoothly and efficiently.",
 
     "home.feature6.title": "Porting",
-    "home.feature6.text": "Looking to hire someone to port your game to a new platform? We can handle both the technical side and rework the control scheme.",
+    "home.feature6.text": "We can assist your developers in expanding the reach of your projects to new platforms. This while maintaining the same quality and features of the original product. We have experience in porting games and simulations from and to various platforms, including PC, Consoles, VR and Mobile.",
     
 
-    "home.article1.title.start": "Expand your ",
-    "home.article1.title.accent": "online presence",
+    "home.article1.title.start": "It’s time to ",
+    "home.article1.title.accent": "upgrade",
     "home.article1.title.end": ".",
-    "home.article1.text.p1": "Designing and developing digital experiences is our specialty, but our story doesn't end there.",
-    "home.article1.text.p2": "We deliver a customized corporate identity including logos, fonts, business cards and more. The total package is just as important to us as the details. ",
-    "home.clickbait": "Start your online adventure here!",
-    "home.article2.title.start": "Our ",
-    "home.article2.title.accent": "Values",
+    "home.article1.text.p1": "We work to provide high quality experiences for you and your users.",
+    "home.article1.text.p2": "In order to provide this level of quality, we focus on clear and precise communication such that no detail will go unnoticed.",
+    
+    "home.clickbait": "We’d love to hear from you!",
+    
+    "home.article2.title.start": "How it ",
+    "home.article2.title.accent": "works",
     "home.article2.title.end": "",
     "home.article2.text.p1": "",
-    "home.companyvalue1.title": "Customer focus",
-    "home.companyvalue1.text": "As a customer you will be involved as closely as possible in the implementation of your project. This way you can always make adjustments where necessary and an excellent result is assured.",
-    "home.companyvalue2.title": "Flexibility",
-    "home.companyvalue2.text": "Our small and permanent team ensures efficient communication. This way we can always respond to your needs.",
-    "home.companyvalue3.title": "Expertise",
-    "home.companyvalue3.text": "Our talented team of developers does not shy away from a challenge. Do you have a complex problem? Our expertise will help you on your way.",
-    "home.companyvalue4.title": "Support",
-    "home.companyvalue4.text": "After the completion of your project, we remain available for further support. We also offer tools with which you can adjust the content of your website yourself.",
+
+    "home.companyvalue1.title": "1. Get In Touch",
+    "home.companyvalue1.text": "You can contact us by sending us an email or by filling in our contact form. We’ll respond to you as soon as possible.",
+    
+    "home.companyvalue2.title": "2. Meeting",
+    "home.companyvalue2.text": "We arrange a meeting where we listen to your ideas and learn how you envision your players’ experience. This way we can get to know each other and ensure that we are all on the same page.",
+    
+    "home.companyvalue3.title": "3. Planning",
+    "home.companyvalue3.text": "Knowing all the details of your project, we can start planning the execution. We determine the skills necessary to realize your project in the most optimal way. Next, we assemble a team that perfectly matches this skillset.",
+    
+    "home.companyvalue4.title": "4. Execution",
+    "home.companyvalue4.text": "We deliver a top-quality implementation by staying in close communication with you, whether it's building from scratch, fixing bugs, or providing ongoing support.",
+    
+    
+    
     "portfolio.title": "Portfolio",
     "portfolio.placeholder": "We are still setting up, content on this page is coming soon!",
     "about.title": "About",
-    "about.intro": "We at Spellware Studios provide quality programming and development services for the video game industry. Our team of experienced and talented programmers has a proven track record of success, having worked on critically acclaimed titles such as Baldur's Gate 3 and Wasteland 3. We specialize in crafting high-quality, engaging and immersive games and simulations that are tailored to delight players across multiple platforms including PC, mobile, VR and more.\n\nWe are proficient in using popular game engines like Unreal Engine and Unity, as well as custom-built engines. Our ultimate goal is to empower game developers and simulation creators with the tools and expertise they need to bring their ideas to life and create experiences that will stand the test of time and be accessible to everyone.",
+    "about.intro": "Our company provides high quality programming and development services for the video game industry. We are a team of experienced and talented programmers with a proven track record of success, having worked on critically acclaimed titles such as Baldur's Gate 3 and Wasteland 3. We specialize in crafting high-quality, engaging and immersive games and simulations that are tailored to delight players across multiple platforms. The platforms include PC, VR, Mobile and more.\n\nWe are proficient in using popular game engines like Unreal Engine and Unity, as well as custom-built engines. Our ultimate goal is to empower game developers and simulation creators with the tools and expertise they need to bring their ideas to life and create experiences that will stand the test of time and be accessible to everyone.",
     "about.team.title": "Our Core Team",
     "about.team.text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "about.quinten": "Quinten Henry",
@@ -82,8 +91,8 @@
     "services.placeholder": "We are still setting up, content on this page is coming soon!",
     "ph": "ph",
     "contact.maintitle": "Get in touch",
-    "contact.text.p2": "Get in touch using the contact form below or drop us an e-mail at ",
-    "contact.text.p1": "Interested? We would love to work with you!",
+    "contact.text.p2": "If you're interested in our services or have any other related questions, feel free to contact us using the form below or drop us an email at ",
+    "contact.text.p1": "",
     "contact.page.name": "Name:",
     "contact.page.email": "E-Mail:",
     "contact.address": "Address:",
@@ -103,17 +112,22 @@
     "contact.error.send": "Something went wrong while trying to send your message: ",
     "service.title": "Our services",
     "services.feature1.title": "Gameplay Programming",
-    "services.feature1.text": "We specialize in gameplay programming and work together with our clients to implement, and test gameplay mechanics and features.\n\nWe can create engaging and dynamic gameplay mechanics that will captivate players. From character movement to quests and inventory systems, we can help you design and develop the foundation of your game or simulation.",
+    "services.feature1.text": "Gameplay programming is one of our main specializations. We work together with our clients to implement, optimize, and test both gameplay mechanics and features.\n\nWe create engaging and dynamic gameplay mechanics that will captivate your players. From character movement to quests and inventory systems, we can help you design and develop the foundation of your game or simulation.",
+    
     "services.feature2.title": "Graphics Programming",
-    "services.feature2.text": "We offer graphics programming services for the video game industry.\n\nOur team of expert programmers are well-versed in the use of shaders, lighting, and materials to create advanced visual effects and ensure optimal performance on various platforms.",
+    "services.feature2.text": "We offer graphics programming services for the video game industry.\n\nOur team of expert programmers are well-versed in the use of shaders, lighting, and materials. This way we can provide you high quality, advanced visual effects and ensure optimal performance on your various platforms.",
+    
     "services.feature3.title": "Networking and Backend",
-    "services.feature3.text": "We design and implement the server infrastructure necessary for multiplayer games and other online features.\n\nWe use a variety of programming languages and tools to create stable, scalable, and secure backend systems. Our goal is to help game developers create seamless online experiences for their players.",
+    "services.feature3.text": "We design and implement server infrastructures necessary for multiplayer games and other online features.\n\nWe use a variety of programming languages and tools to create stable, scalable, and secure backend systems. Our goal is to help you by creating seamless online experiences for your players.",
+    
     "services.feature4.title": "Engine Programming",
-    "services.feature4.text": "Our company has experience designing, implementing, and maintaining the underlying game engine that powers a game.\n\nThis can include creating custom game engines from scratch, or modifying and extending existing engines to create the technical foundation for game developers to bring their ideas to life.",
+    "services.feature4.text": "Another one of our specializations is the designing, implementing, and maintenance of game engines.\n\nThis includes modifying and extending your existing game engine. Or even creating a custom game engine from scratch. Thus bringing both the technical foundations for your game, and your ideas to life.",
+    
     "services.feature5.title": "Bugfixing and Optimization",
-    "services.feature5.text": "Our team will identify and fix bottlenecks, bugs and glitches that can impact player experience.\n\nFrom memory management to code refactoring, we will make sure your game runs smoothly and efficiently, providing the players with a polished and enjoyable experience on any platform.",
+    "services.feature5.text": "We have experts who can identify and fix bugs, bottlenecks and glitches that can impact your players’ experience.\n\nFrom memory management to code refactoring, we will make sure your game runs smoothly and efficiently. The end result being a polished and enjoyable experience for your players, on any platform.",
+    
     "services.feature6.title": "Porting",
-    "services.feature6.text": "We assist game and simulation developers in expanding the reach of their projects to new platforms.\n\nWe have the expertise to take a game designed for one platform and make it compatible with another, while maintaining the quality and features of the original product. We have experience in porting games and simulations to various platforms, including PC, consoles, mobile, and VR.",
+    "services.feature6.text": "We can assist your developers in expanding the reach of your projects to new platforms.\n\nOur developers can take your game, designed for one specific platform, and make it compatible with another. This while maintaining the same quality and features of the original product. We have experience in porting games and simulations from and to various platforms, including PC, Consoles, VR and Mobile.",
 
     "cookies.div.text": "This website uses cookies to enhance the user experience.",
     "cookies.button.text": "I understand!"

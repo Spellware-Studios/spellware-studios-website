@@ -35,7 +35,7 @@ class ServicesPage extends React.Component {
         return (<div>
             <Helmet>
                 <title>{t("nav.services") + " - " + t("maintitle")}</title>
-                <meta name="Description" content="Een uitgebreid overzicht van al onze diensten. Een website, applicatie of huisstijl? Kom langs met je idee, dan maken wij van jouw droom een realiteit." />
+                <meta name="Description" content="We are a passionate group of freelance developers for hire, ready to bring you the greatest technical solutions for your game or simulation." />
 
             </Helmet>
             <PageHeader />

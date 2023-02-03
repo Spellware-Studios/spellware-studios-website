@@ -19,7 +19,7 @@ class AboutPage extends React.Component {
             <React.Fragment>
                 <Helmet>
                     <title>{t("nav.about") + " - " + t("maintitle")}</title>
-                    <meta name="Description" content="Spellware Studios is a co-development studio focusing on game development and consultancy."/>
+                    <meta name="Description" content="We are a passionate group of freelance developers for hire, ready to bring you the greatest technical solutions for your game or simulation."/>
                 </Helmet>
                 <PageHeader />
                 <div className="container">

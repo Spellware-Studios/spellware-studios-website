@@ -10,13 +10,15 @@
     box-shadow: 1px 1px 3px rgba(black, 0.30);
     border-radius: 10px !important;
     cursor: pointer;
-    transition: box-shadow 0.25s, transform 0.25s;
+    
     margin-top: 0.25em;
     margin-bottom: 0.25em;
 
     margin-left: 0.5em;
     margin-right: 0.5em;
     height: 100%;
+
+    transition: box-shadow 0.25s, transform 0.25s;
 }
 
 @include media-breakpoint-up(md) {

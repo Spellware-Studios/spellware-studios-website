@@ -62,12 +62,12 @@ class HomePage extends React.Component {
             <React.Fragment>
                 <Helmet>
                     <title>{t("maintitle")}</title>
-                    <meta name="Description" content="Spellware Studios is a co-development studio from Ghent which focuses on the technical aspect of game development. Providing services such as engine & gameplay programming, porting, and more.." />
+                    <meta name="Description" content="We are a passionate group of freelance developers for hire, ready to bring you the greatest technical solutions for your game or simulation." />
                     <link rel="canonical" href="/home" />
                     <link rel="preload" as="image" href="/media/background.webp" alt="Background image" />
                 </Helmet>
 
-                <AppLoadingOverlay isLoading={!this.state.hasLoaded} />
+                {/* <AppLoadingOverlay isLoading={!this.state.hasLoaded} /> */}
 
                 <div className="landing-container mask-bottom-thick" ref={this.bgParentRef}>
                 
@@ -140,10 +140,41 @@ class HomePage extends React.Component {
                         
                     </div>
                 </div>
+
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-6 offset-sm-3 separator-primary" />
                     </div>
+
+                    <div className="row">
+                        <div className="col-md-12">
+                            <h3 className="article-title title-big">
+                                <p>{t("home.article2.title.start")}</p>
+                                <p className="text-primary">{t("home.article2.title.accent")}</p>
+                                <p>{t("home.article2.title.end")}</p>
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-md-3">
+                            <CompanyValueCard imageAlt={t("home.companyvalue1.title")} image="/email.svg" title={t("home.companyvalue1.title")} text={t("home.companyvalue1.text")} />
+                        </div>
+                        <div className="col-md-3">
+                            <CompanyValueCard imageAlt={t("home.companyvalue2.title")} image="/trumpcard1.svg" title={t("home.companyvalue2.title")} text={t("home.companyvalue2.text")} />
+                        </div>
+                        <div className="col-md-3">
+                            <CompanyValueCard imageAlt={t("home.companyvalue3.title")} image="/icon_planning.svg" title={t("home.companyvalue3.title")} text={t("home.companyvalue3.text")} />
+                        </div>
+                        <div className="col-md-3">
+                            <CompanyValueCard imageAlt={t("home.companyvalue4.title")} image="/trumpcard3.svg" title={t("home.companyvalue4.title")} text={t("home.companyvalue4.text")} />
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div style={{ marginTop: "100px"}} />
+                    </div>
+
                     <div className="row">
 
                         <div className="col-md-4 d-flex flex-column">
@@ -161,31 +192,13 @@ class HomePage extends React.Component {
                             <p>{t("home.article1.text.p2")}</p>
                         </div>
 
-
                     </div>
+                    
                     <div className="row">
-                        <div className="col-md-12">
-                            <h3 className="article-title title-big">
-                                <p>{t("home.article2.title.start")}</p>
-                                <p className="text-primary">{t("home.article2.title.accent")}</p>
-                                <p>{t("home.article2.title.end")}</p>
-                            </h3>
-                        </div>
+                        <div style={{ marginTop: "100px"}} />
                     </div>
-                    <div className="row">
-                        <div className="col-md-3">
-                            <CompanyValueCard imageAlt={t("home.companyvalue1.title")} image="/trumpcard1.svg" title={t("home.companyvalue1.title")} text={t("home.companyvalue1.text")} />
-                        </div>
-                        <div className="col-md-3">
-                            <CompanyValueCard imageAlt={t("home.companyvalue2.title")} image="/trumpcard2.svg" title={t("home.companyvalue2.title")} text={t("home.companyvalue2.text")} />
-                        </div>
-                        <div className="col-md-3">
-                            <CompanyValueCard imageAlt={t("home.companyvalue3.title")} image="/trumpcard3.svg" title={t("home.companyvalue3.title")} text={t("home.companyvalue3.text")} />
-                        </div>
-                        <div className="col-md-3">
-                            <CompanyValueCard imageAlt={t("home.companyvalue4.title")} image="/trumpcard4.svg" title={t("home.companyvalue4.title")} text={t("home.companyvalue4.text")} />
-                        </div>
-                    </div>
+                    
+                    
                 </div>
 
             </React.Fragment>
