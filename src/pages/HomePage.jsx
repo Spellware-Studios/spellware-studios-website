@@ -178,18 +178,22 @@ class HomePage extends React.Component {
                     <div className="row">
 
                         <div className="col-md-4 d-flex flex-column">
-                            <h2 className="clickbait-title">{t("home.clickbait")}</h2>
-                            <a href="/contact" className="btn roundbutton-secondary title-button clickbait-button">{t("home.button.contact")}</a>
+                            <div className="m-auto">
+                                <h2 className="clickbait-title">{t("home.clickbait")}</h2>
+                                <a href="/contact" className="btn roundbutton-secondary title-button clickbait-button">{t("home.button.contact")}</a>
+                            </div>
                         </div>
 
-                        <div className="col-md-6 offset-md-2 article">
-                            <h3 className="article-title">
-                                <p>{t("home.article1.title.start")}</p>
-                                <p className="text-primary">{t("home.article1.title.accent")}</p>
-                                <p>{t("home.article1.title.end")}</p>
-                            </h3>
-                            <p>{t("home.article1.text.p1")}</p>
-                            <p>{t("home.article1.text.p2")}</p>
+                        <div className="col-md-6 offset-md-2 article d-flex flex-column">
+                            <div className="m-auto">
+                                <h3 className="article-title">
+                                    <p>{t("home.article1.title.start")}</p>
+                                    <p className="text-primary">{t("home.article1.title.accent")}</p>
+                                    <p>{t("home.article1.title.end")}</p>
+                                </h3>
+                                <p>{t("home.article1.text.p1")}</p>
+                                <p>{t("home.article1.text.p2")}</p>
+                            </div>
                         </div>
 
                     </div>

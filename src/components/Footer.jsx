@@ -24,11 +24,9 @@ class Footer extends React.Component {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-4 flex-column d-flex">
-                            <h2 className="footer-text m-auto text-left">Got an idea that you're eager to try out? </h2>
-                        </div>
+                        
                         <div className="col-md-4">
-                            <a href="/contact" className="btn roundbutton-secondary title-button clickbait-button">{t("home.button.contact")}</a>
+                            <a href="/contact" className="btn roundbutton-primary title-button clickbait-button">{t("home.button.contact")}</a>
                         
                         </div>
                     </div>
