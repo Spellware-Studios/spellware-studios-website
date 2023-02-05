@@ -74,7 +74,16 @@ class ServicesPage extends React.Component {
                     <ServiceCard imgleft={true} icon="/media/images/porting.webp" hoverIcon="/media/images/porting.webp" title={t("services.feature6.title")} text={t("services.feature6.text")} />
                 </div>
 
-                <div style={{ marginTop: "100px" }}></div>
+                <div className="row" style={{marginTop: "90px" }}>
+                            <div className="col-md-12 d-flex flex-column">
+                                <div className="m-auto">
+                                    <h2 className="clickbait-title">{t("home.clickbait")}</h2>
+                                    <a href="/contact" className="btn roundbutton-secondary title-button clickbait-button">{t("home.button.contact")}</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style={{marginBottom: "90px" }} />
             </div>
             <PageSpacer />
         </div>);

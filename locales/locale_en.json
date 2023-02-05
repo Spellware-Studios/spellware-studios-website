@@ -1,7 +1,7 @@
 {
     "contact.telno": "Coming Soon",
     "contact.email": "contact@spellwarestudios.com",
-    "contact.address.street": "Coming Soon",
+    "contact.address.street": "Ghent, Belgium",
     "contact.address.city": "",
     "lang.en": "English",
     "lang.nl": "Nederlands",
@@ -65,7 +65,7 @@
     "home.companyvalue2.text": "We arrange a meeting where we listen to your ideas and learn how you envision your players’ experience. This way we can get to know each other and ensure that we are all on the same page.",
     
     "home.companyvalue3.title": "3. Planning",
-    "home.companyvalue3.text": "Knowing all the details of your project, we can start planning the execution. We determine the skills necessary to realize your project in the most optimal way. Next, we assemble a team that perfectly matches this skillset.",
+    "home.companyvalue3.text": "Knowing all the details of your project, we can start planning the execution. We determine the requirements to realize your project in the most optimal way. Next, we assemble a team that perfectly matches this skillset.",
     
     "home.companyvalue4.title": "4. Execution",
     "home.companyvalue4.text": "We deliver a top-quality implementation by staying in close communication with you, whether it's building from scratch, fixing bugs, or providing ongoing support.",
@@ -75,7 +75,7 @@
     "portfolio.title": "Portfolio",
     "portfolio.placeholder": "We are still setting up, content on this page is coming soon!",
     "about.title": "About",
-    "about.intro": "Our company provides high quality programming and development services for the video game industry. We are a team of experienced and talented programmers with a proven track record of success, having worked on critically acclaimed titles such as Baldur's Gate 3 and Wasteland 3. We specialize in crafting high-quality, engaging and immersive games and simulations that are tailored to delight players across multiple platforms. The platforms include PC, VR, Mobile and more.\n\nWe are proficient in using popular game engines like Unreal Engine and Unity, as well as custom-built engines. Our ultimate goal is to empower game developers and simulation creators with the tools and expertise they need to bring their ideas to life and create experiences that will stand the test of time and be accessible to everyone.",
+    "about.intro": "Our team provides high quality programming and development services for the video game industry. We are a team of experienced and talented programmers with a proven track record of success, having worked on critically acclaimed titles such as Baldur's Gate 3 and Wasteland 3. We specialize in crafting high-quality, engaging and immersive games and simulations that are tailored to delight players across multiple platforms. The platforms include PC, VR, Mobile and more.\n\nWe are proficient in using popular game engines like Unreal Engine and Unity, as well as custom-built engines. Our ultimate goal is to empower game developers and simulation creators with the tools and expertise they need to bring their ideas to life and create experiences that will stand the test of time and be accessible to everyone.",
     "about.team.title": "Our Core Team",
     "about.team.text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "about.quinten": "Quinten Henry",

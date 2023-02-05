@@ -23,16 +23,19 @@ class Footer extends React.Component {
                             <Image className="footer-logo" src="/spellwarelogo_white_hor.svg" alt={t("footer.logo")} />
                         </div>
                     </div>
-                    <div className="row">
+
+                    {/* <div className="row">
                         
                         <div className="col-md-4">
                             <a href="/contact" className="btn roundbutton-primary title-button clickbait-button">{t("home.button.contact")}</a>
                         
                         </div>
-                    </div>
+                    </div> 
+                    
                     <div className='row' style={{marginTop: "20px"}}>
-                        
-                    </div>
+                    */}
+
+        
                     <div className="row">
                         <div className="col-md-3">
                             <h3 className="footer-title d-none d-md-block">{t("footer.title.location")}</h3>
@@ -73,8 +76,8 @@ class Footer extends React.Component {
                     <div className="row">
                         <div className="col-md-12 d-flex">
                             <div className="m-auto">
-                                <a className="footer-social fab fa-linkedin" href="https://www.linkedin.com/company/SpellwareST" aria-hidden="false" alt="Spellware LinkedIn"></a>
-                                <a className="footer-social fab fa-twitter" href="https://www.twitter.com/SpellwareST" aria-hidden="false" alt="Spellware Twitter"></a>
+                                <a className="footer-social fab fa-linkedin" href="https://www.linkedin.com/company/SpellwareST" target="_blank" aria-hidden="false" alt="Spellware LinkedIn"></a>
+                                <a className="footer-social fab fa-twitter" href="https://www.twitter.com/SpellwareST" target="_blank" aria-hidden="false" alt="Spellware Twitter"></a>
                             </div>
                         </div>
                     </div>

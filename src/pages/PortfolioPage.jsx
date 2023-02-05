@@ -66,7 +66,7 @@ class PortfolioPage extends React.Component {
                                 <React.Fragment>
                                     <p>Earthlings is one of our ongoing projects. It’s a social MMO built in <b>Unreal Engine 5</b> where you’ll have the freedom to create and customize your own land plots, visit a variety of unique and immersive environments, and interact with other players in real time. With our team's expertise in gameplay, graphics and backend programming, we are building a game that will be a highly social and immersive experience. Allowing players to express themselves by creating and collaborating in a vast and living world.</p>
                                     <p>We’ve been trusted by our client to be in charge of the entire development of this project. And we’re currently working on implementing various different tasks such as character movement, abilities, server transitions and back-end, mobs and NPCs, inventory systems, questing systems, vehicles and so much more!</p>
-                                    <a href="https://www.earthlings.land/">Visit the Earthlings website for more information.</a>
+                                    <a href="https://www.earthlings.land/" target="_blank" >Visit the Earthlings website for more information.</a>
                                 </React.Fragment>
                             )}
                         </div>
@@ -75,7 +75,7 @@ class PortfolioPage extends React.Component {
                             {this.renderPortion(true, "/media/images/vr4fire.jpg", "VR4Fire", "https://safety4all.be/opleidingen/vr/",
                                 <React.Fragment>
                                     <p>VR4Fire is a VR fire simulation we developed for our client using Unity. It is designed to teach individuals the appropriate actions to take during fire emergencies in various scenarios. This simulation immerses users in a realistic virtual environment, allowing them to experience a fire breakout and practice their response in a safe and controlled setting. The simulation includes multiple scenarios, such as hospitals and warehouses. Users can experience the spread of fire and smoke, as well as learn how to use fire safety equipment.</p>
-                                    <a href="https://www.youtube.com/watch?v=ZAYpQc3kI5I">Watch the VR4Fire commercial on YouTube.</a>
+                                    <a href="https://www.youtube.com/watch?v=ZAYpQc3kI5I" target="_blank" >Watch the VR4Fire commercial on YouTube.</a>
                                 </React.Fragment>
                             )}
                         </div>
@@ -109,7 +109,17 @@ class PortfolioPage extends React.Component {
                                 </a>
                             </div>
                         </div>
-                        <div style={{marginBottom: "60px" }} />
+
+                        <div className="row" style={{marginTop: "90px" }}>
+                            <div className="col-md-12 d-flex flex-column">
+                                <div className="m-auto">
+                                    <h2 className="clickbait-title">{t("home.clickbait")}</h2>
+                                    <a href="/contact" className="btn roundbutton-secondary title-button clickbait-button">{t("home.button.contact")}</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style={{marginBottom: "90px" }} />
                         
                         {/*<div className="row">
                             <div className="col-md-4 offset-md-4 text-center">
