@@ -46,7 +46,7 @@ class App extends React.Component {
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" />
 
                     {/* Google Analytics */}
-                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3HMHYH4K9S" />
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLX03N4LPN" />
                     <script src="/scripts/gtag.js" />
                 </Helmet>
 
