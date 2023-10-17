@@ -65,8 +65,8 @@ class ContactPage extends React.Component {
 
             this.setState({ sendStatus: STATUS_READY, sendError: responseBody.errorMessage })
         } else {
-            console.log("Successfully sent contact form.")
-            console.log( await (await response.blob()).text());
+            //console.log("Successfully sent contact form.")
+            //console.log( await (await response.blob()).text());
             this.setState({ sendStatus: STATUS_SENT })
         }
     }
@@ -115,9 +115,9 @@ class ContactPage extends React.Component {
         return (
             <React.Fragment>
                 <Helmet>
-                    <title>{t("nav.contact") + " - " + t("maintitle")}</title>
-                    <meta name="Description" content="We are a passionate group of freelance developers for hire, ready to bring you the greatest technical solutions for your game or simulation." />
-                </Helmet>
+                    <title>{t("nav.contact")}</title>
+                    <meta name="Description" content={t("home.introtext")} />
+                    </Helmet>
                 <PageHeader />
 
                 <div className="container">

@@ -46,7 +46,7 @@ class HomePage extends React.Component {
          const parentW = this.bgParentRef.current.clientWidth;
          const parentH = this.bgParentRef.current.clientHeight;
          
-         console.log(parentW + ", " + parentH)
+         //console.log(parentW + ", " + parentH)
  
          this.bgVideoRef.current.style.height = parentH + "px";
          this.bgVideoRef.current.style.width = parentW + "px";
@@ -62,7 +62,7 @@ class HomePage extends React.Component {
             <React.Fragment>
                 <Helmet>
                     <title>{t("maintitle")}</title>
-                    <meta name="Description" content="We are a passionate group of freelance developers for hire, ready to bring you the greatest technical solutions for your game or simulation." />
+                    <meta name="Description" content={t("home.introtext")} />
                     <link rel="canonical" href="/home" />
                     <link rel="preload" as="image" href="/media/background.webp" alt="Background image" />
                 </Helmet>
@@ -105,17 +105,17 @@ class HomePage extends React.Component {
                     <div className="row feature-card-row">
                         <div className="col-md-4">
                             <a href="/services#gameplay" >
-                                <FeatureCard imageAlt={t("home.feature1.title")} icon="Controller" title={t("home.feature1.title")} text={t("home.feature1.text")} />
+                                <FeatureCard imageAlt={t("home.feature1.alt")} icon="Controller" title={t("home.feature1.title")} text={t("home.feature1.text")} />
                             </a>
                         </div>
                         <div className="col-md-4">
                             <a href="/services#graphics" >
-                                <FeatureCard imageAlt={t("home.feature2.title")} icon="CameraVideo" title={t("home.feature2.title")} text={t("home.feature2.text")} />
+                                <FeatureCard imageAlt={t("home.feature2.alt")} icon="CameraVideo" title={t("home.feature2.title")} text={t("home.feature2.text")} />
                             </a>
                         </div>
                         <div className="col-md-4">
                             <a href="/services#backend" >
-                                <FeatureCard imageAlt={t("home.feature3.title")} icon="HddNetwork" title={t("home.feature3.title")} text={t("home.feature3.text")} />
+                                <FeatureCard imageAlt={t("home.feature3.alt")} icon="HddNetwork" title={t("home.feature3.title")} text={t("home.feature3.text")} />
                             </a>
                         </div>
                         
@@ -124,17 +124,17 @@ class HomePage extends React.Component {
                     <div className="row feature-card-row">
                         <div className="col-md-4">
                             <a href="/services#engine" >
-                                <FeatureCard imageAlt={t("home.feature4.title")} icon="Gear" title={t("home.feature4.title")} text={t("home.feature4.text")} />
+                                <FeatureCard imageAlt={t("home.feature4.alt")} icon="Gear" title={t("home.feature4.title")} text={t("home.feature4.text")} />
                             </a>
                         </div>
                         <div className="col-md-4">
                             <a href="/services#optimization" >
-                                <FeatureCard imageAlt={t("home.feature5.title")} icon="Bug" title={t("home.feature5.title")} text={t("home.feature5.text")} />
+                                <FeatureCard imageAlt={t("home.feature5.alt")} icon="Bug" title={t("home.feature5.title")} text={t("home.feature5.text")} />
                             </a>
                         </div>
                         <div className="col-md-4">
                             <a href="/services" >
-                                <FeatureCard imageAlt={t("home.feature6.title")} icon="Phone" title={t("home.feature6.title")} text={t("home.feature6.text")} />
+                                <FeatureCard imageAlt={t("home.feature6.alt")} icon="Phone" title={t("home.feature6.title")} text={t("home.feature6.text")} />
                             </a>
                         </div>
                         
@@ -158,16 +158,16 @@ class HomePage extends React.Component {
 
                     <div className="row">
                         <div className="col-md-3">
-                            <CompanyValueCard imageAlt={t("home.companyvalue1.title")} image="/email.svg" title={t("home.companyvalue1.title")} text={t("home.companyvalue1.text")} />
+                            <CompanyValueCard imageAlt={t("home.companyvalue1.alt")} image="/email.svg" title={t("home.companyvalue1.title")} text={t("home.companyvalue1.text")} />
                         </div>
                         <div className="col-md-3">
-                            <CompanyValueCard imageAlt={t("home.companyvalue2.title")} image="/trumpcard1.svg" title={t("home.companyvalue2.title")} text={t("home.companyvalue2.text")} />
+                            <CompanyValueCard imageAlt={t("home.companyvalue2.alt")} image="/trumpcard1.svg" title={t("home.companyvalue2.title")} text={t("home.companyvalue2.text")} />
                         </div>
                         <div className="col-md-3">
-                            <CompanyValueCard imageAlt={t("home.companyvalue3.title")} image="/icon_planning.svg" title={t("home.companyvalue3.title")} text={t("home.companyvalue3.text")} />
+                            <CompanyValueCard imageAlt={t("home.companyvalue3.alt")} image="/icon_planning.svg" title={t("home.companyvalue3.title")} text={t("home.companyvalue3.text")} />
                         </div>
                         <div className="col-md-3">
-                            <CompanyValueCard imageAlt={t("home.companyvalue4.title")} image="/trumpcard3.svg" title={t("home.companyvalue4.title")} text={t("home.companyvalue4.text")} />
+                            <CompanyValueCard imageAlt={t("home.companyvalue4.alt")} image="/trumpcard3.svg" title={t("home.companyvalue4.title")} text={t("home.companyvalue4.text")} />
                         </div>
                     </div>
 

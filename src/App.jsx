@@ -30,7 +30,7 @@ class App extends React.Component {
 
     componentDidMount() {
         if (window.location.toString().includes("_escaped_fragment_")) {
-            console.log("Crawler detected, setting language to EN");
+            //console.log("Crawler detected, setting language to EN");
             this.props.i18n.changeLanguage("en"); // Set language to EN for SEO
         }
     }

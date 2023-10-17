@@ -34,9 +34,8 @@ class ServicesPage extends React.Component {
         const { t } = this.props;
         return (<div>
             <Helmet>
-                <title>{t("nav.services") + " - " + t("maintitle")}</title>
-                <meta name="Description" content="We are a passionate group of freelance developers for hire, ready to bring you the greatest technical solutions for your game or simulation." />
-
+                <title>{t("nav.services")}</title>
+                <meta name="Description" content={t("home.introtext")} />
             </Helmet>
             <PageHeader />
 
@@ -51,27 +50,27 @@ class ServicesPage extends React.Component {
             <div className="container">
 
                 <div className="row pre-wrap service-row" id="gameplay">
-                    <ServiceCard imgleft={this.state.width <= this.state.minwidth} icon="/media/images/gameplay.webp" hoverIcon="/media/images/gameplay.webp" title={t("services.feature1.title")} text={t("services.feature1.text")} />
+                    <ServiceCard imgleft={this.state.width <= this.state.minwidth} icon="/media/images/gameplay.webp" hoverIcon="/media/images/gameplay.webp" title={t("services.feature1.title")} text={t("services.feature1.text")} imageAlt={t("services.feature1.alt")} />
                 </div>
 
                 <div className="row pre-wrap service-row" id="graphics">
-                    <ServiceCard imgleft={true} icon="/media/images/graphics.webp" hoverIcon="/media/images/graphics.webp" title={t("services.feature2.title")} text={t("services.feature2.text")} />
+                    <ServiceCard imgleft={true} icon="/media/images/graphics.webp" hoverIcon="/media/images/graphics.webp" title={t("services.feature2.title")} text={t("services.feature2.text")}  imageAlt={t("services.feature2.alt")}/>
                 </div>
 
                 <div className="row pre-wrap service-row" id="backend">
-                    <ServiceCard imgleft={this.state.width <= this.state.minwidth} icon="/media/images/backend.webp" hoverIcon="/media/images/backend.webp" title={t("services.feature3.title")} text={t("services.feature3.text")} />
+                    <ServiceCard imgleft={this.state.width <= this.state.minwidth} icon="/media/images/backend.webp" hoverIcon="/media/images/backend.webp" title={t("services.feature3.title")} text={t("services.feature3.text")}  imageAlt={t("services.feature3.alt")}/>
                 </div>
 
                 <div className="row pre-wrap service-row" id="engine">
-                    <ServiceCard imgleft={true} icon="/media/images/engine.webp" hoverIcon="/media/images/engine.webp" title={t("services.feature4.title")} text={t("services.feature4.text")} />
+                    <ServiceCard imgleft={true} icon="/media/images/engine.webp" hoverIcon="/media/images/engine.webp" title={t("services.feature4.title")} text={t("services.feature4.text")}  imageAlt={t("services.feature4.alt")}/>
                 </div>
 
                 <div className="row pre-wrap service-row" id="optimization">
-                    <ServiceCard imgleft={false} icon="/media/images/bugfixing.webp" hoverIcon="/media/images/bugfixing.webp" title={t("services.feature5.title")} text={t("services.feature5.text")} />
+                    <ServiceCard imgleft={false} icon="/media/images/bugfixing.webp" hoverIcon="/media/images/bugfixing.webp" title={t("services.feature5.title")} text={t("services.feature5.text")}  imageAlt={t("services.feature5.alt")}/>
                 </div>
 
                 <div className="row pre-wrap service-row" id="porting">
-                    <ServiceCard imgleft={true} icon="/media/images/porting.webp" hoverIcon="/media/images/porting.webp" title={t("services.feature6.title")} text={t("services.feature6.text")} />
+                    <ServiceCard imgleft={true} icon="/media/images/porting.webp" hoverIcon="/media/images/porting.webp" title={t("services.feature6.title")} text={t("services.feature6.text")}  imageAlt={t("services.feature6.alt")}/>
                 </div>
 
                 <div className="row" style={{marginTop: "90px" }}>

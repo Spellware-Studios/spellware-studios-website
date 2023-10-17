@@ -83,7 +83,7 @@ class NavBar extends React.Component {
 
                         <LinkContainer to="/home">
                             <Navbar.Brand className="m-auto">
-                                <Image src="/spellwarelogo_white_hor.svg" className="navbar-logo d-inline-block align-top" alt="Spellware Studios Logo" ref={this.logoRef} />
+                                <Image src="/spellwarelogo_white_hor.svg" className="navbar-logo d-inline-block align-top" alt={t("nav.image.logo.alt")} ref={this.logoRef} />
                             </Navbar.Brand>
                         </LinkContainer>
 

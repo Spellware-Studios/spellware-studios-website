@@ -30,7 +30,7 @@ class FeatureCard extends React.Component {
 
             <div className="d-none d-md-block" ref={this.mobileTestRef} />
             <div className="d-flex flex-row card-icon-row">
-                <Icon iconName={this.props.icon} className="feature-icon m-auto" />
+                <Icon iconName={this.props.icon} className="feature-icon m-auto" alt={this.props.imageAlt}/>
             </div>
             <div className="d-flex flex-row feature-card-title-row">
                 <h2 className="feature-card-title" >{this.props.title}</h2>

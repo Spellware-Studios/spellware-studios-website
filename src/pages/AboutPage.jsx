@@ -18,8 +18,8 @@ class AboutPage extends React.Component {
         return (
             <React.Fragment>
                 <Helmet>
-                    <title>{t("nav.about") + " - " + t("maintitle")}</title>
-                    <meta name="Description" content="We are a passionate group of freelance developers for hire, ready to bring you the greatest technical solutions for your game or simulation."/>
+                    <title>{t("nav.about")}</title>
+                    <meta name="Description" content={t("home.introtext")} />
                 </Helmet>
                 <PageHeader />
                 <div className="container">
@@ -36,12 +36,12 @@ class AboutPage extends React.Component {
 
                     <div className="row d-flex flex-row about-image-row">
                         
-                            <Image className="technology-image" src='/media/images/unity.png' />
+                            <Image className="technology-image" src='/media/images/unity.png' alt={t("about.alt1")} />
                         
                         
-                            <Image className="technology-image" src='/media/images/unreal.png' />
+                            <Image className="technology-image" src='/media/images/unreal.png' alt={t("about.alt2")}/>
                         
-                            <Image className="technology-image" src='/media/images/oculus.png' />
+                            <Image className="technology-image" src='/media/images/oculus.png' alt={t("about.alt3")}/>
                         
                     </div>       
                      <div className="row">

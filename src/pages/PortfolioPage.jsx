@@ -24,22 +24,22 @@ class PortfolioPage extends React.Component {
                 </div>;
     }
 
-    renderImage(left, image, link){
+    renderImage(left, image, link, alt){
         return <div className={left ? "col-md-5 d-flex flex-column" : "col-md-5 offset-md-1 d-flex flex-column"}>
                     <a href={link} className="m-auto portfolio-clickable-image" target="_blank">
-                        <Image className="service-card-image m-auto" src={image} />
+                        <Image className="service-card-image m-auto" src={image} alt={alt}/>
                     </a>
                 </div>;
     }
 
-    renderPortion(textLeft, image, title, link, inner) {
+    renderPortion(textLeft, image, title, link, inner, alt) {
         return (
             <React.Fragment>
                 <link rel="preload" as="image" href={image} />
                 <div className="d-none d-md-block" />
                 { textLeft ? 
-                    <React.Fragment>{this.renderImage(true, image, link)}{this.renderText(true, inner, title)}</React.Fragment> :
-                    <React.Fragment>{this.renderText(false, inner, title)}{this.renderImage(false, image, link)}</React.Fragment>
+                    <React.Fragment>{this.renderImage(true, image, link, alt)}{this.renderText(true, inner, title)}</React.Fragment> :
+                    <React.Fragment>{this.renderText(false, inner, title)}{this.renderImage(false, image, link, alt)}</React.Fragment>
                 }
             </React.Fragment>
         );
@@ -49,8 +49,8 @@ class PortfolioPage extends React.Component {
         const { t } = this.props;
         return (<React.Fragment>
                     <Helmet>
-                        <title>{t("nav.portfolio") + " - " + t("maintitle")}</title>
-                        <meta name="Description" content="We are a passionate group of freelance developers for hire, ready to bring you the greatest technical solutions for your game or simulation."/>
+                        <title>{t("nav.portfolio")}</title>
+                        <meta name="Description" content={t("home.introtext")} />
                     </Helmet>
                     <PageHeader />
                     
@@ -64,33 +64,35 @@ class PortfolioPage extends React.Component {
                         <div className="row pre-wrap service-row" id="graphics">
                             {this.renderPortion(false, "/media/images/earthlings.jpg", "Earthlings", "https://earthlings.land/?page=home",
                                 <React.Fragment>
-                                    <p>Earthlings is one of our ongoing projects. It’s a social MMO built in <b>Unreal Engine 5</b> where you’ll have the freedom to create and customize your own land plots, visit a variety of unique and immersive environments, and interact with other players in real time. With our team's expertise in gameplay, graphics and backend programming, we are building a game that will be a highly social and immersive experience. Allowing players to express themselves by creating and collaborating in a vast and living world.</p>
-                                    <p>We’ve been trusted by our client to be in charge of the entire development of this project. And we’re currently working on implementing various different tasks such as character movement, abilities, server transitions and back-end, mobs and NPCs, inventory systems, questing systems, vehicles and so much more!</p>
-                                    <a href="https://www.earthlings.land/" target="_blank" >Visit the Earthlings website for more information.</a>
-                                </React.Fragment>
+                                    <p>{t("portfolio.feature1.article1")}<a href="https://www.unrealengine.com/en-US/unreal-engine-5" target="blank">Unreal Engine 5</a>{t("portfolio.feature1.article2")}</p>
+                                    <p>{t("portfolio.feature1.article3")}</p>
+                                    <a href="https://www.earthlings.land/" target="_blank" >{t("portfolio.feature1.link")}</a>
+                                </React.Fragment>,
+                                t("portfolio.feature1.alt")
                             )}
                         </div>
 
                         <div className="row pre-wrap service-row" id="graphics">
                             {this.renderPortion(true, "/media/images/vr4fire.jpg", "VR4Fire", "https://safety4all.be/opleidingen/vr/",
                                 <React.Fragment>
-                                    <p>VR4Fire is a VR fire simulation we developed for our client using Unity. It is designed to teach individuals the appropriate actions to take during fire emergencies in various scenarios. This simulation immerses users in a realistic virtual environment, allowing them to experience a fire breakout and practice their response in a safe and controlled setting. The simulation includes multiple scenarios, such as hospitals and warehouses. Users can experience the spread of fire and smoke, as well as learn how to use fire safety equipment.</p>
-                                    <a href="https://www.youtube.com/watch?v=ZAYpQc3kI5I" target="_blank" >Watch the VR4Fire commercial on YouTube.</a>
-                                </React.Fragment>
+                                    <p>{t("portfolio.feature2.article1")}</p>
+                                    <a href="https://www.youtube.com/watch?v=ZAYpQc3kI5I" target="_blank" >{t("portfolio.feature2.link")}</a>
+                                </React.Fragment>,
+                                 t("portfolio.feature2.alt")
                             )}
                         </div>
 
                         <div className="row">
                             <div className="col-md-12">
-                                    <h2 className="service-card-title" style={{marginTop: "30px"}}>More Projects</h2>
+                                    <h2 className="service-card-title" style={{marginTop: "30px"}}>{t("portfolio.moreProjects.title")}</h2>
                                     <div className="separator-small" style={{ width: "80px", marginBottom: "40px" }}></div>
                             </div>
                         </div>
 
                         <div className="row">
                             <div className="col-md-8">
-                                <p>Other games that members of our team have worked on include <b>Baldur's Gate III</b> and <b>Wasteland 3</b>.
-                                Click the images below to find out more information about each project.
+                                <p>{t("portfolio.moreProjects.article1")}<a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/" target="_blank">Baldur's Gate III</a>{t("portfolio.moreProjects.article2")}<a href="https://store.steampowered.com/app/719040/Wasteland_3/" target="_blank">Wasteland 3</a>.
+                                <br/>{t("portfolio.moreProjects.article3")}
                                 </p>
                                 <div style={{marginBottom: "50px" }} />
                             </div>
@@ -100,12 +102,12 @@ class PortfolioPage extends React.Component {
                         <div className="row">
                             <div className="col-md-6 d-flex flex-column">
                                 <a href="https://store.steampowered.com/app/719040/Wasteland_3/" className="m-auto portfolio-clickable-image" target="_blank">
-                                    <Image className="service-card-image m-auto" src="/media/images/wasteland3.webp" />
+                                    <Image className="service-card-image m-auto" src="/media/images/wasteland3.webp" alt={t("portfolio.moreProjects.alt1")} />
                                 </a>
                             </div>
                             <div className="col-md-6 d-flex flex-column">
-                                <a href="https://press.baldursgate3.game/" className="m-auto portfolio-clickable-image" target="_blank">
-                                    <Image className="service-card-image m-auto" src="/media/images/bg3.webp" />
+                                <a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/" className="m-auto portfolio-clickable-image" target="_blank">
+                                    <Image className="service-card-image m-auto" src="/media/images/bg3.webp" alt={t("portfolio.moreProjects.alt2")}/>
                                 </a>
                             </div>
                         </div>

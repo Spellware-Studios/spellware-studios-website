@@ -12,7 +12,7 @@ class PageSpacer extends React.Component {
         const padding = window.innerHeight - document.getElementById("root").clientHeight;
              
         if(padding > 0) {
-            console.log("Padding page height by " + padding);  
+            //console.log("Padding page height by " + padding);  
             this.setState({ padding: padding + "px" }); 
         }
     }
