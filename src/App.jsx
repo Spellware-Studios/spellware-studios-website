@@ -26,12 +26,40 @@ class App extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {
+            lanuage: 'en',
+        }
     }
 
     componentDidMount() {
-        if (window.location.toString().includes("_escaped_fragment_")) {
-            //console.log("Crawler detected, setting language to EN");
+        this.handleCookies();
+    }
+
+    getCookie(name) {
+        if(name == undefined || name == null || name == "") return null;
+
+        const cookieArray = document.cookie.split(';');
+
+        for(const cookie of cookieArray){
+            const tempCookie = cookie.trim();
+            
+            if(tempCookie.startsWith(name + "=")){
+                const value = tempCookie.substring(name.length + 1);
+                return decodeURIComponent(value);
+            }
+        }
+
+        return null;
+    }
+
+    handleCookies () {
+        const cookieLanguage = this.getCookie('language');
+
+        if(cookieLanguage != undefined && cookieLanguage != null && cookieLanguage != ""){
+            this.props.i18n.changeLanguage(cookieLanguage);
+            this.setState({language: cookieLanguage})
+        }
+        else {
             this.props.i18n.changeLanguage("en"); // Set language to EN for SEO
         }
     }

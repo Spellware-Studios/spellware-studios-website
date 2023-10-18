@@ -40,8 +40,17 @@ class NavBar extends React.Component {
     }
 
     onChangeLocale = (event) => {
-        //console.log("Changing language to: " + event.target.getAttribute("lang"))
+        // Change language
         this.props.i18n.changeLanguage(event.target.getAttribute("lang"))
+
+        // Set cookie
+        const days = 30;
+        const expirationDate = new Date();
+        expirationDate.setDate(expirationDate.getDate() + days);
+      
+        const expires = `expires=${expirationDate.toUTCString()}`;
+
+        document.cookie = "language=" + event.target.getAttribute("lang") + ";" + ` ${expires};` + " path=/";
     }
 
     onNavLinkClick = (event) => {
