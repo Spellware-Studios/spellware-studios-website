@@ -3,6 +3,7 @@ import { withTranslation } from "react-i18next";
 import { Helmet } from 'react-helmet';
 import FeatureCard from "../components/FeatureCard";
 import CompanyValueCard from "../components/CompanyValueCard";
+import {Link} from 'react-router-dom';
 
 import "../../css/HomePage.scss"
 import AppLoadingOverlay from "../components/AppLoadingOverlay";
@@ -55,6 +56,10 @@ class HomePage extends React.Component {
          this.bgVideoPatternOverlay.current.style.width = parentW + "px";
     }
 
+    onNavigateToNewPage = () => {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         const t = this.props.t;
 
@@ -93,8 +98,8 @@ class HomePage extends React.Component {
                                 <h1 className="slogan"><p>{t("home.slogan.start")}</p> <p className="slogan-accent">{t("home.slogan.accent")}</p><p>{t("home.slogan.end")}</p></h1>
                                 <p className="intro-text">{t("home.introtext")}</p>
                                 <div className="d-flex flex-row">
-                                    <a href="/contact" className="btn roundbutton-primary title-button">{t("home.button.contact")}</a>
-                                    <a href="/portfolio" className="btn roundbutton-secondary title-button">{t("home.button.portfolio")}</a>
+                                    <Link to="/contact" onClick={this.onNavigateToNewPage} className="btn roundbutton-primary title-button">{t("home.button.contact")}</Link>
+                                    <Link to="/portfolio" onClick={this.onNavigateToNewPage} className="btn roundbutton-secondary title-button">{t("home.button.portfolio")}</Link>
                                 </div>
                             </div>
                         </div>
@@ -104,38 +109,38 @@ class HomePage extends React.Component {
                 <div className="container feature-card-container">
                     <div className="row feature-card-row">
                         <div className="col-md-4">
-                            <a href="/services#gameplay" >
+                            <Link to="/services#gameplay" >
                                 <FeatureCard imageAlt={t("home.feature1.alt")} icon="Controller" title={t("home.feature1.title")} text={t("home.feature1.text")} />
-                            </a>
+                            </Link>
                         </div>
                         <div className="col-md-4">
-                            <a href="/services#graphics" >
+                            <Link to="/services#graphics" >
                                 <FeatureCard imageAlt={t("home.feature2.alt")} icon="CameraVideo" title={t("home.feature2.title")} text={t("home.feature2.text")} />
-                            </a>
+                            </Link>
                         </div>
                         <div className="col-md-4">
-                            <a href="/services#backend" >
+                            <Link to="/services#backend" >
                                 <FeatureCard imageAlt={t("home.feature3.alt")} icon="HddNetwork" title={t("home.feature3.title")} text={t("home.feature3.text")} />
-                            </a>
+                            </Link>
                         </div>
                         
                     </div>
                     <div className="row" style={{marginTop: "45px"}}></div>
                     <div className="row feature-card-row">
                         <div className="col-md-4">
-                            <a href="/services#engine" >
+                            <Link to="/services#engine" >
                                 <FeatureCard imageAlt={t("home.feature4.alt")} icon="Gear" title={t("home.feature4.title")} text={t("home.feature4.text")} />
-                            </a>
+                            </Link>
                         </div>
                         <div className="col-md-4">
-                            <a href="/services#optimization" >
+                            <Link to="/services#optimization" >
                                 <FeatureCard imageAlt={t("home.feature5.alt")} icon="Bug" title={t("home.feature5.title")} text={t("home.feature5.text")} />
-                            </a>
+                            </Link>
                         </div>
                         <div className="col-md-4">
-                            <a href="/services" >
+                            <Link to="/services#porting" >
                                 <FeatureCard imageAlt={t("home.feature6.alt")} icon="Phone" title={t("home.feature6.title")} text={t("home.feature6.text")} />
-                            </a>
+                            </Link>
                         </div>
                         
                     </div>
@@ -180,7 +185,7 @@ class HomePage extends React.Component {
                         <div className="col-md-4 d-flex flex-column">
                             <div className="m-auto">
                                 <h2 className="clickbait-title">{t("home.clickbait")}</h2>
-                                <a href="/contact" className="btn roundbutton-secondary title-button clickbait-button">{t("home.button.contact")}</a>
+                                <Link to="/contact" onClick={this.onNavigateToNewPage} className="btn roundbutton-secondary title-button clickbait-button">{t("home.button.contact")}</Link>
                             </div>
                         </div>
 

@@ -5,6 +5,7 @@ import { withTranslation } from 'react-i18next';
 import { Image, Button } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Helmet } from 'react-helmet';
+import {Link} from 'react-router-dom';
 
 import "../../css/AboutPage.scss";
 
@@ -13,6 +14,11 @@ class AboutPage extends React.Component {
         super(props);
         this.state = {  }
     }
+
+    onNavigateToNewPage = () => {
+        window.scrollTo(0, 0);
+    }
+
     render() { 
         const { t } = this.props;
         return (
@@ -36,17 +42,16 @@ class AboutPage extends React.Component {
 
                     <div className="row d-flex flex-row about-image-row">
                         
-                            <Image className="technology-image" src='/media/images/unity.png' alt={t("about.alt1")} />
+                            <a href='https://unity.com/' target='_blank'><Image className="technology-image" src='/media/images/unity.png' alt={t("about.alt1")} /></a>
                         
+                            <a href='https://www.unrealengine.com/en-US' target='_blank'><Image className="technology-image" src='/media/images/unreal.png' alt={t("about.alt2")}/></a>
                         
-                            <Image className="technology-image" src='/media/images/unreal.png' alt={t("about.alt2")}/>
-                        
-                            <Image className="technology-image" src='/media/images/oculus.png' alt={t("about.alt3")}/>
+                            <a href='https://www.oculus.com/' target='_blank'><Image className="technology-image" src='/media/images/oculus.png' alt={t("about.alt3")}/></a>
                         
                     </div>       
                      <div className="row">
                         <div className="col-md-6 offset-md-3">
-                            <a href="/contact" className="btn roundbutton-secondary title-button clickbait-button about-contact-button d-block about-top-margin">{t("home.button.contact")}</a>
+                            <Link to="/contact" onClick={this.onNavigateToNewPage} className="btn roundbutton-secondary title-button clickbait-button about-contact-button d-block about-top-margin">{t("home.button.contact")}</Link>
                         </div>
                     </div>
 

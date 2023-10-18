@@ -10,6 +10,7 @@ import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import ContactPage from './pages/ContactPage';
 import PortfolioPage from './pages/PortfolioPage';
+import CookiePolicyPage from './pages/CookiePolicyPage';
 
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
@@ -69,6 +70,7 @@ class App extends React.Component {
                         <Route path="/contact" component={ContactPage} />
                         <Route path="/services" component={ServicesPage} />
                         <Route path="/portfolio" component={PortfolioPage} />
+                        <Route path="/cookie-policy" component={CookiePolicyPage} />
 
                         {/* Static Routes (including 404 page) */}
                         <Route>

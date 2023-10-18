@@ -5,6 +5,7 @@ import PageSpacer from "../components/PageSpacer";
 import ServiceCard from "../components/ServiceCard";
 import { Helmet } from 'react-helmet';
 import { Image } from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 import "../../css/PortfolioPage.scss";
 
@@ -43,6 +44,10 @@ class PortfolioPage extends React.Component {
                 }
             </React.Fragment>
         );
+    }
+
+    onNavigateToNewPage = () => {
+        window.scrollTo(0, 0);
     }
 
     render() { 
@@ -116,7 +121,7 @@ class PortfolioPage extends React.Component {
                             <div className="col-md-12 d-flex flex-column">
                                 <div className="m-auto">
                                     <h2 className="clickbait-title">{t("home.clickbait")}</h2>
-                                    <a href="/contact" className="btn roundbutton-secondary title-button clickbait-button">{t("home.button.contact")}</a>
+                                    <Link to="/contact" onClick={this.onNavigateToNewPage} className="btn roundbutton-secondary title-button clickbait-button">{t("home.button.contact")}</Link>
                                 </div>
                             </div>
                         </div>

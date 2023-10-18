@@ -10,7 +10,7 @@ class NavBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            languages: ["nl", "en"],
+            languages: ["en", "nl"],
             isScrolledDown: false
         }
         this.navbarRef = React.createRef();
@@ -68,6 +68,10 @@ class NavBar extends React.Component {
         }
     }
 
+    onLogoClick = () => {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         const { t } = this.props;
 
@@ -81,7 +85,7 @@ class NavBar extends React.Component {
 
                     <Nav className="m-auto">  {/* Nav links */}
 
-                        <LinkContainer to="/home">
+                        <LinkContainer to="/home" onClick={this.onLogoClick}>
                             <Navbar.Brand className="m-auto">
                                 <Image src="/spellwarelogo_white_hor.svg" className="navbar-logo d-inline-block align-top" alt={t("nav.image.logo.alt")} ref={this.logoRef} />
                             </Navbar.Brand>
@@ -106,13 +110,13 @@ class NavBar extends React.Component {
                     </Nav>
                     
                     {/* Language picker */}
-                    {/*<Nav> 
+                    <Nav> 
 
                         <NavDropdown className="navbar-language-dropdown m-auto" title={<div className="d-inline"><p className="fas fa-globe-africa d-inline lang-picker-globe"/><p className="d-inline">{this.props.i18n.language}</p></div>} alignRight>
                             {this.state.languages.map((lang) => <NavDropdown.Item onClick={this.onChangeLocale} key={lang} lang={lang}>{t("lang." + lang)}</NavDropdown.Item>)}
                         </NavDropdown>
 
-                    </Nav>*/}
+                    </Nav>
                 </Navbar.Collapse>
             </Navbar>
         </React.Fragment>);

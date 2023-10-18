@@ -3,6 +3,7 @@ import { useRouteData } from 'react-static';
 import { Button, Form, Col } from 'react-bootstrap';
 import { withTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
+import {Link} from 'react-router-dom';
 
 import PageHeader from '../components/PageHeader';
 import PageSpacer from '../components/PageSpacer';
@@ -110,6 +111,10 @@ class ContactPage extends React.Component {
         return errors.length == 0;
     }
 
+    onNavigateToNewPage = () => {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         const { t } = this.props;
         return (
@@ -190,7 +195,7 @@ class ContactPage extends React.Component {
                                         name="checkbox"
                                         ref={this.termsCheckboxRef} />
 
-                                    <label htmlFor="contact-terms-checkbox">{t("contact.terms")}<a href="/cookie-policy">{t("contact.terms.bold")}</a>{t("contact.terms.end")} *</label>
+                                    <label htmlFor="contact-terms-checkbox">{t("contact.terms")}<Link to="/cookie-policy" onClick={this.onNavigateToNewPage}>{t("contact.terms.bold")}</Link>{t("contact.terms.end")} *</label>
                                 </div>
                                 <p className={this.hasError("checkbox") ? "inline-errormsg" : "d-none"}>{t("contact.error.terms")}</p>
                             </Form.Group>

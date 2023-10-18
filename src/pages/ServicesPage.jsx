@@ -4,6 +4,7 @@ import PageHeader from "../components/PageHeader";
 import PageSpacer from "../components/PageSpacer";
 import ServiceCard from "../components/ServiceCard";
 import { Helmet } from 'react-helmet';
+import {Link} from 'react-router-dom';
 import { Image } from 'react-bootstrap';
 
 import '../../css/ServicesPage.scss';
@@ -19,6 +20,14 @@ class ServicesPage extends React.Component {
     componentDidMount() {
         this.updateWindowDimensions();
         window.addEventListener('resize', this.updateWindowDimensions);
+
+        const { hash } = window.location;
+        if (hash) {
+          const element = document.querySelector(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
     }
 
     componentWillUnmount() {
@@ -29,6 +38,9 @@ class ServicesPage extends React.Component {
         this.setState({ width: window.innerWidth, height: window.innerHeight });
     }
 
+    onNavigateToNewPage = () => {
+        window.scrollTo(0, 0);
+    }
 
     render() {
         const { t } = this.props;
@@ -77,7 +89,7 @@ class ServicesPage extends React.Component {
                             <div className="col-md-12 d-flex flex-column">
                                 <div className="m-auto">
                                     <h2 className="clickbait-title">{t("home.clickbait")}</h2>
-                                    <a href="/contact" className="btn roundbutton-secondary title-button clickbait-button">{t("home.button.contact")}</a>
+                                    <Link to="/contact" onClick={this.onNavigateToNewPage} className="btn roundbutton-secondary title-button clickbait-button">{t("home.button.contact")}</Link>
                                 </div>
                             </div>
                         </div>
