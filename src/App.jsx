@@ -36,14 +36,14 @@ class App extends React.Component {
     }
 
     getCookie(name) {
-        if(name == undefined || name == null || name == "") return null;
+        if (name == undefined || name == null || name == "") return null;
 
         const cookieArray = document.cookie.split(';');
 
-        for(const cookie of cookieArray){
+        for (const cookie of cookieArray) {
             const tempCookie = cookie.trim();
-            
-            if(tempCookie.startsWith(name + "=")){
+
+            if (tempCookie.startsWith(name + "=")) {
                 const value = tempCookie.substring(name.length + 1);
                 return decodeURIComponent(value);
             }
@@ -52,12 +52,12 @@ class App extends React.Component {
         return null;
     }
 
-    handleCookies () {
+    handleCookies() {
         const cookieLanguage = this.getCookie('language');
 
-        if(cookieLanguage != undefined && cookieLanguage != null && cookieLanguage != ""){
+        if (cookieLanguage != undefined && cookieLanguage != null && cookieLanguage != "") {
             this.props.i18n.changeLanguage(cookieLanguage);
-            this.setState({language: cookieLanguage})
+            this.setState({ language: cookieLanguage })
         }
         else {
             this.props.i18n.changeLanguage("en"); // Set language to EN for SEO
@@ -99,6 +99,11 @@ class App extends React.Component {
                         <Route path="/services" component={ServicesPage} />
                         <Route path="/portfolio" component={PortfolioPage} />
                         <Route path="/cookie-policy" component={CookiePolicyPage} />
+                        <Route path="/starfall" render={() => {
+                            window.location.href = "http://starfall.spellwarestudios.com";
+                            return null;
+                        }} >
+                        </Route>
 
                         {/* Static Routes (including 404 page) */}
                         <Route>
