@@ -38,7 +38,7 @@
         "react-router": "^5.2.0",
         "react-router-bootstrap": "^0.25.0",
         "react-router-dom": "^5.2.0",
-        "react-static": "^7.6.2",
+        "react-static": "^7.2.0",
         "react-static-plugin-reach-router": "^7.2.0",
         "react-static-plugin-react-router": "^7.4.2",
         "react-static-plugin-sass": "^7.3.0",
