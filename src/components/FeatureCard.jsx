@@ -35,12 +35,6 @@ class FeatureCard extends React.Component {
             <div className="d-flex flex-row feature-card-title-row">
                 <h2 className="feature-card-title" >{this.props.title}</h2>
             </div>
-            <div className='d-flex flex-row'>
-                <div className='feature-card-separator' />
-            </div>
-            <div className="d-flex flex-row">
-                <p className="feature-card-text">{this.props.text}</p>
-            </div>
             
         </Card>);
     }

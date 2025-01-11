@@ -60,8 +60,8 @@
     
     "home.clickbait": "Vertel ons je verhaal!",
     
-    "home.article2.title.start": "Hoe gaan we ",
-    "home.article2.title.accent": "werk",
+    "home.article2.title.start": "Met wie we hebben ",
+    "home.article2.title.accent": "samengewerkt",
     "home.article2.title.end": "",
     "home.article2.text.p1": "",
 
@@ -85,17 +85,23 @@
     "portfolio.title": "Portfolio",
     "portfolio.placeholder": "We are still setting up, content on this page is coming soon!",
 
-    "portfolio.feature1.title": "Earthlings",
-    "portfolio.feature1.article1": "Earthlings is een van onze lopende projecten. Het is een sociale RPG ontwikkeld in ",
-    "portfolio.feature1.article2": " waar je de vrijheid hebt om je eigen landpercelen te creëren en aan te passen, een verscheidenheid aan unieke en meeslepende omgevingen te verkennen en in realtime te communiceren met andere spelers. Dankzij het vakmanschap van ons team op het gebied van gameplay, graphics en backend-programmering, bouwen we een spel dat een uiterst sociale en meeslepende ervaring biedt. Hiermee kunnen spelers zich uiten door samen te creëren en samen te werken in een uitgestrekte en levendige wereld.",
-    "portfolio.feature1.article3": "Onze klant heeft ons het volledige beheer van de ontwikkeling van dit project toevertrouwd. Op dit moment zijn we bezig met de implementatie van verschillende taken, zoals character movement, vaardigheden, server transitions en back-end, mobs en NPCs, inventory systemen, questing systemen, voertuigen en nog veel meer!",
-    "portfolio.feature1.link": "Bezoek de website van Earthlings voor meer informatie.",
-    "portfolio.feature1.alt": "Het logo van Earthlings met de tekst: 'one world united'",
+    "portfolio.feature1.title": "Ardent Wilds",
+    "portfolio.feature1.article1": "Ardent Wilds is een actiesurvivalgame die we ontwikkelen in onze eigen engine, met uitdagende gevechten en eindeloze aanpassingsmogelijkheden. Vorm werelden, smeed krachtige uitrusting en herstel oude krachten om je wereld te verdedigen tegen monsterlijke tentakelwezens.",
+    "portfolio.feature1.article2": "Alles in Ardent Wilds wordt in-house ontwikkeld door ons team, van networking en physics tot rendering en gameplaysystemen.",
+    "portfolio.feature1.link": "Bezoek onze Steam Page voor meer info.",
+    "portfolio.feature1.alt": "Ardent Wilds Gameplay Screenshot",
 
-    "portfolio.feature2.title": "VR4Fire",
-    "portfolio.feature2.article1": "VR4Fire is een VR-brandsimulatie die we hebben ontwikkeld voor onze klant met behulp van Unity. Het is ontworpen om individuen de juiste stappen te leren nemen tijdens brandnoodgevallen in verschillende scenario's. Deze simulatie dompelt gebruikers onder in een realistische virtuele omgeving, waardoor ze een branduitbraak kunnen ervaren en hun reactie kunnen oefenen in een veilige en gecontroleerde omgeving. Het bevat meerdere scenario's, zoals ziekenhuizen en magazijnen. Gebruikers kunnen de verspreiding van vuur en rook ervaren, evenals leren hoe ze brandveiligheidsapparatuur moeten gebruiken.",
-    "portfolio.feature2.link": "Bekijk de VR4Fire-commercial op YouTube.",
-    "portfolio.feature2.alt": "Een persoon draagt een VR-headset en houdt een brandblusser vast die is verbonden met de headset",
+    "portfolio.feature2.title": "Earthlings",
+    "portfolio.feature2.article1": "Earthlings is een van onze lopende projecten. Het is een sociale RPG ontwikkeld in ",
+    "portfolio.feature2.article2": " waar je de vrijheid hebt om je eigen landpercelen te creëren en aan te passen, een verscheidenheid aan unieke en meeslepende omgevingen te verkennen en in realtime te communiceren met andere spelers. Dankzij het vakmanschap van ons team op het gebied van gameplay, graphics en backend-programmering, bouwen we een spel dat een uiterst sociale en meeslepende ervaring biedt. Hiermee kunnen spelers zich uiten door samen te creëren en samen te werken in een uitgestrekte en levendige wereld.",
+    "portfolio.feature2.article3": "Onze klant heeft ons het volledige beheer van de ontwikkeling van dit project toevertrouwd. Op dit moment zijn we bezig met de implementatie van verschillende taken, zoals character movement, vaardigheden, server transitions en back-end, mobs en NPCs, inventory systemen, questing systemen, voertuigen en nog veel meer!",
+    "portfolio.feature2.link": "Bezoek de website van Earthlings voor meer informatie.",
+    "portfolio.feature2.alt": "Het logo van Earthlings met de tekst: 'one world united'",
+
+    "portfolio.feature3.title": "VR4Fire",
+    "portfolio.feature3.article1": "VR4Fire is een VR-brandsimulatie die we hebben ontwikkeld voor onze klant met behulp van Unity. Het is ontworpen om individuen de juiste stappen te leren nemen tijdens brandnoodgevallen in verschillende scenario's. Deze simulatie dompelt gebruikers onder in een realistische virtuele omgeving, waardoor ze een branduitbraak kunnen ervaren en hun reactie kunnen oefenen in een veilige en gecontroleerde omgeving. Het bevat meerdere scenario's, zoals ziekenhuizen en magazijnen. Gebruikers kunnen de verspreiding van vuur en rook ervaren, evenals leren hoe ze brandveiligheidsapparatuur moeten gebruiken.",
+    "portfolio.feature3.link": "Bekijk de VR4Fire-commercial op YouTube.",
+    "portfolio.feature3.alt": "Een persoon draagt een VR-headset en houdt een brandblusser vast die is verbonden met de headset",
 
     "portfolio.moreProjects.title": "Andere Projecten",
     "portfolio.moreProjects.article1": "Naast deze projecten hebben onze teamleden ook bijgedragen aan ",

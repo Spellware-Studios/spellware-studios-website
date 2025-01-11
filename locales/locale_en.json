@@ -60,9 +60,9 @@
     
     "home.clickbait": "We’d love to hear from you!",
     
-    "home.article2.title.start": "How it ",
-    "home.article2.title.accent": "works",
-    "home.article2.title.end": "",
+    "home.article2.title.start": "Who we've",
+    "home.article2.title.accent": " partnered",
+    "home.article2.title.end": " with",
     "home.article2.text.p1": "",
 
     "home.companyvalue1.title": "1. Get In Touch",
@@ -85,17 +85,23 @@
     "portfolio.title": "Portfolio",
     "portfolio.placeholder": "We are still setting up, content on this page is coming soon!",
 
-    "portfolio.feature1.title": "Earthlings",
-    "portfolio.feature1.article1": "Earthlings is one of our ongoing projects. It’s a social MMO built in ",
-    "portfolio.feature1.article2": " where you’ll have the freedom to create and customize your own land plots, visit a variety of unique and immersive environments, and interact with other players in real time. With our team's expertise in gameplay, graphics and backend programming, we are building a game that will be a highly social and immersive experience. Allowing players to express themselves by creating and collaborating in a vast and living world.",
-    "portfolio.feature1.article3": "We’ve been trusted by our client to be in charge of the entire development of this project. And we’re currently working on implementing various different tasks such as character movement, abilities, server transitions and back-end, mobs and NPCs, inventory systems, questing systems, vehicles and so much more!",
-    "portfolio.feature1.link": "Visit the Earthlings website for more information.",
-    "portfolio.feature1.alt": "The Earthlings logo saying 'one world united'",
+    "portfolio.feature1.title": "Ardent Wilds",
+    "portfolio.feature1.article1": "Ardent Wilds is an action survival game we're making in our custom engine with skill-based combat and endless customization. Shape worlds, forge powerful gear, and reclaim ancient powers to defend your world against tentacly intruders.",
+    "portfolio.feature1.article2": "Everything in Ardent Wilds is crafted in-house by our team. From networking and physics to rendering and gameplay systems.",
+    "portfolio.feature1.link": "Visit our Steam Page for more information.",
+    "portfolio.feature1.alt": "Ardent Wilds Gameplay Screenshot",
 
-    "portfolio.feature2.title": "VR4Fire",
-    "portfolio.feature2.article1": "VR4Fire is a VR fire simulation we developed for our client using Unity. It is designed to teach individuals the appropriate actions to take during fire emergencies in various scenarios. This simulation immerses users in a realistic virtual environment, allowing them to experience a fire breakout and practice their response in a safe and controlled setting. It includes multiple scenarios, such as hospitals and warehouses. Users can experience the spread of fire and smoke, as well as learn how to use fire safety equipment.",
-    "portfolio.feature2.link": "Watch the VR4Fire commercial on YouTube.",
-    "portfolio.feature2.alt": "A person wearing a VR headset and holding a fire extinguisher that is connected to the headset",
+    "portfolio.feature2.title": "Earthlings",
+    "portfolio.feature2.article1": "Earthlings is one of our ongoing projects. It’s a social MMO built in ",
+    "portfolio.feature2.article2": " where you’ll have the freedom to create and customize your own land plots, visit a variety of unique and immersive environments, and interact with other players in real time. With our team's expertise in gameplay, graphics and backend programming, we are building a game that will be a highly social and immersive experience. Allowing players to express themselves by creating and collaborating in a vast and living world.",
+    "portfolio.feature2.article3": "We’ve been trusted by our client to be in charge of the entire development of this project. And we’re currently working on implementing various different tasks such as character movement, abilities, server transitions and back-end, mobs and NPCs, inventory systems, questing systems, vehicles and so much more!",
+    "portfolio.feature2.link": "Visit the Earthlings website for more information.",
+    "portfolio.feature2.alt": "The Earthlings logo saying 'one world united'",
+
+    "portfolio.feature3.title": "VR4Fire",
+    "portfolio.feature3.article1": "VR4Fire is a VR fire simulation we developed for our client using Unity. It is designed to teach individuals the appropriate actions to take during fire emergencies in various scenarios. This simulation immerses users in a realistic virtual environment, allowing them to experience a fire breakout and practice their response in a safe and controlled setting. It includes multiple scenarios, such as hospitals and warehouses. Users can experience the spread of fire and smoke, as well as learn how to use fire safety equipment.",
+    "portfolio.feature3.link": "Watch the VR4Fire commercial on YouTube.",
+    "portfolio.feature3.alt": "A person wearing a VR headset and holding a fire extinguisher that is connected to the headset",
 
     "portfolio.moreProjects.title": "More Projects",
     "portfolio.moreProjects.article1": "Other games that members of our team have worked on include ",

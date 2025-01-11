@@ -25,7 +25,7 @@ class Footer extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 offset-md-0">
-                            <Image className="footer-logo" src="/spellwarelogo_white_hor.svg" alt={t("footer.image.logo.alt")} />
+                            <Image className="footer-logo" src="/spellwarelogo_white_hor.png" alt={t("footer.image.logo.alt")} />
                         </div>
                     </div>
 

@@ -49,7 +49,10 @@
 }
 
 .slogan-accent {
-    color: $primary !important;
+    background: linear-gradient(to right,$gradient-primary,$gradient-secondary) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
 }
 
 .intro-text {

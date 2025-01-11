@@ -96,15 +96,12 @@ class NavBar extends React.Component {
 
                         <LinkContainer to="/home" onClick={this.onLogoClick}>
                             <Navbar.Brand className="m-auto">
-                                <Image src="/spellwarelogo_white_hor.svg" className="navbar-logo d-inline-block align-top" alt={t("nav.image.logo.alt")} ref={this.logoRef} />
+                                <Image src="/spellwarelogo_white_hor.png" className="navbar-logo d-inline-block align-top" alt={t("nav.image.logo.alt")} ref={this.logoRef} />
                             </Navbar.Brand>
                         </LinkContainer>
 
                         <LinkContainer onClick={this.onNavLinkClick} to="/home">
                             <Nav.Item className="navbar-link m-auto">{t("nav.home")}</Nav.Item>
-                        </LinkContainer>
-                        <LinkContainer onClick={this.onNavLinkClick} to="/services">
-                            <Nav.Item className="navbar-link m-auto">{t("nav.services")}</Nav.Item>
                         </LinkContainer>
                         <LinkContainer onClick={this.onNavLinkClick} to="/portfolio">
                             <Nav.Item className="navbar-link m-auto">{t("nav.portfolio")}</Nav.Item>
