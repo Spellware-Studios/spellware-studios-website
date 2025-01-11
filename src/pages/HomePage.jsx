@@ -95,10 +95,10 @@ class HomePage extends React.Component {
                         <div className="row" style={{ height: "90px" }} /> {/* Add some space under the navbar */}
                         <div className="row" style={{ marginLeft: "-0.5em" }}>
                             <div className="col-md-8">
-                                <h1 className="slogan"><p>{t("home.slogan.start")}</p> 
-                                <p className="slogan-accent">{t("home.slogan.accent")}</p>
-                                
-                                <p>{t("home.slogan.end")}</p></h1>
+                                <h1 className="slogan"><p>{t("home.slogan.start")}</p>
+                                    <p className="slogan-accent">{t("home.slogan.accent")}</p>
+
+                                    <p>{t("home.slogan.end")}</p></h1>
                                 <p className="intro-text">{t("home.introtext")}</p>
                                 <div className="d-flex flex-row">
                                     <Link to="/contact" onClick={this.onNavigateToNewPage} className="btn roundbutton-primary title-button">{t("home.button.contact")}</Link>
@@ -109,8 +109,46 @@ class HomePage extends React.Component {
                         <div className="row" style={{ height: "350px" }} /> {/* Add some space under the slogan/intro text */}
                     </div>
                 </div>
-  
+                <div className="container feature-card-container">
+                    <div className="row feature-card-row">
+                        <div className="col-md-4">
+                            <Link to="/services#gameplay" >
+                                <FeatureCard imageAlt={t("home.feature1.alt")} icon="Controller" title={t("home.feature1.title")} text={t("home.feature1.text")} />
+                            </Link>
+                        </div>
+                        <div className="col-md-4">
+                            <Link to="/services#graphics" >
+                                <FeatureCard imageAlt={t("home.feature2.alt")} icon="CameraVideo" title={t("home.feature2.title")} text={t("home.feature2.text")} />
+                            </Link>
+                        </div>
+                        <div className="col-md-4">
+                            <Link to="/services#backend" >
+                                <FeatureCard imageAlt={t("home.feature3.alt")} icon="HddNetwork" title={t("home.feature3.title")} text={t("home.feature3.text")} />
+                            </Link>
+                        </div>
 
+                    </div>
+                    <div className="row" style={{ marginTop: "45px" }}></div>
+                    <div className="row feature-card-row">
+                        <div className="col-md-4">
+                            <Link to="/services#engine" >
+                                <FeatureCard imageAlt={t("home.feature4.alt")} icon="Gear" title={t("home.feature4.title")} text={t("home.feature4.text")} />
+                            </Link>
+                        </div>
+                        <div className="col-md-4">
+                            <Link to="/services#optimization" >
+                                <FeatureCard imageAlt={t("home.feature5.alt")} icon="Bug" title={t("home.feature5.title")} text={t("home.feature5.text")} />
+                            </Link>
+                        </div>
+                        <div className="col-md-4">
+                            <Link to="/services#porting" >
+                                <FeatureCard imageAlt={t("home.feature6.alt")} icon="Phone" title={t("home.feature6.title")} text={t("home.feature6.text")} />
+                            </Link>
+                        </div>
+
+                    </div>
+                </div>
+                
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-6 offset-sm-3 separator-primary" />

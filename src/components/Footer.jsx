@@ -68,7 +68,6 @@ class Footer extends React.Component {
                         </div>
                         <div className="col-md-3 footer-group">
                             <h3 className="footer-title d-block d-md-none">{t("footer.title.links")}</h3>
-                            <p><Link className="footer-link" to="/services" onClick={this.onNavigateToNewPage}>{t("nav.services")}</Link></p>
                             <p><Link className="footer-link" to="/portfolio" onClick={this.onNavigateToNewPage}>{t("nav.portfolio")}</Link></p>
                             <p><Link className="footer-link" to="/about" onClick={this.onNavigateToNewPage}>{t("nav.about")}</Link></p>
                             <p><Link className="footer-link" to="/contact" onClick={this.onNavigateToNewPage}>{t("nav.contact")}</Link></p>
