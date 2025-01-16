@@ -21,6 +21,8 @@ class AboutPage extends React.Component {
 
     render() { 
         const { t } = this.props;
+        const lang = this.props.match?.params?.lang || "en"; // Fallback to "en"
+
         return (
             <React.Fragment>
                 <Helmet>
@@ -96,7 +98,7 @@ class AboutPage extends React.Component {
                         <div className="col-md-4 d-flex flex-column">
                             <div className="m-auto">
                                 <h2 className="clickbait-title">{t("home.clickbait")}</h2>
-                                <Link to="/contact" onClick={this.onNavigateToNewPage} className="btn roundbutton-secondary title-button clickbait-button">{t("home.button.contact")}</Link>
+                                <Link to={`/${lang}/contact`} onClick={this.onNavigateToNewPage} className="btn roundbutton-secondary title-button clickbait-button">{t("home.button.contact")}</Link>
                             </div>
                         </div>
 
@@ -122,77 +124,7 @@ class AboutPage extends React.Component {
                 </div>
                 <div style={{ marginBottom: "90px" }} />
 
-                    {/*
-                    <div className="row">
-                        <div className="col-md-8 offset-md-2">
-                            <div className="separator-primary" />
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-12">
-                            <h2 className="about-title text-center">{t("about.team.title")}</h2>
-                        </div>
-                    </div>
-                    <div className="row">
-
-                        <div className="col-md-4 about-team-card">
-                            <Image className="about-team-image" src="/media/quinten.webp" alt={t("about.quinten.photo")}/>
-                            <div className="d-block d-md-none">
-                                <p className="about-team-name text-center">{t("about.quinten")}</p>
-                                <p className="about-team-role text-center">{t("about.quinten.role")}</p>
-                                <p className="about-team-desc">{t("about.quinten.desc")}</p>
-                            </div>
-                        </div>
-                        
-                        <div className="col-md-4 about-team-card">
-                            <Image className="about-team-image" src="/media/pj.webp" alt={t("about.pj.photo")}/>
-                            <div className="d-block d-md-none">
-                                <p className="about-team-name text-center">{t("about.pj")}</p>
-                                <p className="about-team-role text-center">{t("about.pj.role")}</p>
-                                <p className="about-team-desc">{t("about.pj.desc")}</p>
-                            </div>
-                        </div>
-
-                        <div className="col-md-4 about-team-card">
-                            <Image className="about-team-image" src="/media/kenzo.webp" alt={t("about.kenzo.photo")}/>
-                            <div className="d-block d-md-none">
-                                <p className="about-team-name text-center">{t("about.kenzo")}</p>
-                                <p className="about-team-role text-center">{t("about.kenzo.role")}</p>
-                                <p className="about-team-desc">{t("about.kenzo.desc")}</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div className="row">
-                        <div className="col-md-4">
-                            <p className="about-team-name text-center d-none d-md-block">{t("about.quinten")}</p>
-                        </div>
-                        <div className="col-md-4">
-                            <p className="about-team-name text-center d-none d-md-block">{t("about.pj")}</p>
-                        </div>
-                        <div className="col-md-4">
-                            <p className="about-team-name text-center d-none d-md-block">{t("about.kenzo")}</p>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-4">
-                            <p className="about-team-role text-center d-none d-md-block">{t("about.quinten.role")}</p>
-                        </div>
-                        <div className="col-md-4">
-                            <p className="about-team-role text-center d-none d-md-block">{t("about.pj.role")}</p>
-                        </div>
-                        <div className="col-md-4">
-                            <p className="about-team-role text-center d-none d-md-block">{t("about.kenzo.role")}</p>
-                        </div>
-                    </div>
-
-                    <div className="row">
-                        <div className="col-md-6 offset-md-3">
-                            <a href="/contact" className="btn roundbutton-secondary title-button clickbait-button about-contact-button d-block about-top-margin">{t("home.button.contact")}</a>
-                        </div>
-                    </div>
-
-                    */}
+                   
                 </div>
                 <PageSpacer />
             </React.Fragment>);

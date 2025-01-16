@@ -16,6 +16,7 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import PageLoading from './components/PageLoading';
 import AppLoadingOverlay from './components/AppLoadingOverlay';
+import { useLocation } from 'react-router-dom';
 
 import { withTranslation } from 'react-i18next';
 
@@ -27,12 +28,24 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            lanuage: 'en',
+            language: 'en',
         }
     }
 
     componentDidMount() {
-        this.handleCookies();
+        const pathname = window.location.pathname;
+        const langMatch = pathname.match(/^\/([a-z]{2})\//);  // Match the language code (2 lowercase letters at the beginning)
+    
+        if (langMatch) {
+            const lang = langMatch[1];  // Extract language code
+            console.log(lang);  // Log the language, e.g., "en" or "nl"
+    
+            this.props.i18n.changeLanguage(lang);  // Change the language based on the lang param
+            this.setState({ language: lang });  // Store the language in the state
+        } else {
+            this.props.i18n.changeLanguage('en');  // Fallback to English if no language is found
+            this.setState({ language: 'en' });
+        }
     }
 
     getCookie(name) {
@@ -74,12 +87,14 @@ class App extends React.Component {
                     <script src="https://kit.fontawesome.com/2fdeda7a4a.js" crossorigin="anonymous" />
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" />
 
+                    <meta name="keywords" content="Game Developers For Hire,Game Development, Gameplay Programming, Graphics Programming,Engine Programming,Game Porting Services,Unity Developers,Unreal Engine Developers,Game Developers Belgium,Game developers belgie,Game Ontwikkelaar Belgie,Game Ontwikkelaar Inhuren" />
+
                     {/* Google Analytics */}
                     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLX03N4LPN" />
                     <script src="/scripts/gtag.js" />
                 </Helmet>
 
-                <NavBar />
+                <NavBar lang={this.state.language}/>
 
                 {/* Note: the <Routes> component is automatically added by react-static-router-react-plugin, we don't need to add it here ourselves. */}
 
@@ -88,21 +103,22 @@ class App extends React.Component {
 
                         {/* Dynamic Routes */}
                         <Route exact path="/">
-                            <Redirect to="/home" />
+                            <Redirect to="/en/home" />
                         </Route>
                         <Route path="/index.html">
-                            <Redirect to="/home" />
+                            <Redirect to="/en/home" />
                         </Route>
-                        <Route path="/home" component={HomePage} />
-                        <Route path="/about" component={AboutPage} />
-                        <Route path="/contact" component={ContactPage} />
-                        <Route path="/services" component={ServicesPage} />
-                        <Route path="/portfolio" component={PortfolioPage} />
-                        <Route path="/cookie-policy" component={CookiePolicyPage} />
-                        <Route path="/starfall" render={() => {
-                            window.location.href = "http://starfall.spellwarestudios.com";
+                        <Route path="/:lang/home" component={HomePage} />
+                        <Route path="/:lang/about" component={AboutPage} />
+                        <Route path="/:lang/contact" component={ContactPage} />
+                        <Route path="/:lang/services" component={ServicesPage} />
+                        <Route path="/:lang/portfolio" component={PortfolioPage} />
+                        <Route path="/:lang/cookie-policy" component={CookiePolicyPage} />
+                        <Route path="/:lang/starfall" render={({ match }) => {
+                            const lang = match.params.lang;
+                            window.location.href = `http://starfall.spellwarestudios.com`;
                             return null;
-                        }} >
+                        }}>
                         </Route>
 
                         {/* Static Routes (including 404 page) */}
@@ -117,7 +133,7 @@ class App extends React.Component {
                 <CookieConsent location="bottom" cookieName="SpellwareCookie" buttonText={t("cookies.button.text")} style={{ background: "#21242c", boxShadow: "0px 2px 10px #000000" }} buttonClasses="btn roundbutton-secondary title-button" expires={999}>
                     {t("cookies.div.text")}
                 </CookieConsent>
-                <Footer />
+                <Footer lang={this.state.language}/>
 
             </Root>);
     }

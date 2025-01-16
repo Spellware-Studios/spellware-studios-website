@@ -52,6 +52,7 @@ class PortfolioPage extends React.Component {
 
     render() {
         const { t } = this.props;
+        const lang = this.props.match?.params?.lang || "en"; // Fallback to "en"
         return (<React.Fragment>
             <Helmet>
                 <title>{t("nav.portfolio")}</title>
@@ -174,7 +175,7 @@ class PortfolioPage extends React.Component {
                         <div className="col-md-4 d-flex flex-column">
                             <div className="m-auto">
                                 <h2 className="clickbait-title">{t("home.clickbait")}</h2>
-                                <Link to="/contact" onClick={this.onNavigateToNewPage} className="btn roundbutton-secondary title-button clickbait-button">{t("home.button.contact")}</Link>
+                                <Link to={`/${lang}/contact`} onClick={this.onNavigateToNewPage} className="btn roundbutton-secondary title-button clickbait-button">{t("home.button.contact")}</Link>
                             </div>
                         </div>
 

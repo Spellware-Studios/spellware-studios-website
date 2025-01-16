@@ -18,8 +18,9 @@ class Footer extends React.Component {
     }
 
     render() {
-        const { t } = this.props;
-
+        const { t,lang } = this.props;
+        console.log(this.props.test);
+        
         return (
             <div className="footer-body mask-top-thick">
                 <div className="container">
@@ -68,13 +69,13 @@ class Footer extends React.Component {
                         </div>
                         <div className="col-md-3 footer-group">
                             <h3 className="footer-title d-block d-md-none">{t("footer.title.links")}</h3>
-                            <p><Link className="footer-link" to="/portfolio" onClick={this.onNavigateToNewPage}>{t("nav.portfolio")}</Link></p>
-                            <p><Link className="footer-link" to="/about" onClick={this.onNavigateToNewPage}>{t("nav.about")}</Link></p>
-                            <p><Link className="footer-link" to="/contact" onClick={this.onNavigateToNewPage}>{t("nav.contact")}</Link></p>
+                            <p><Link className="footer-link" to={`/${lang}/portfolio`} onClick={this.onNavigateToNewPage}>{t("nav.portfolio")}</Link></p>
+                            <p><Link className="footer-link" to={`/${lang}/about`} onClick={this.onNavigateToNewPage}>{t("nav.about")}</Link></p>
+                            <p><Link className="footer-link" to={`/${lang}/contact`} onClick={this.onNavigateToNewPage}>{t("nav.contact")}</Link></p>
                         </div>
                         <div className="col-md-3 footer-group">
                             <h3 className="footer-title d-block d-md-none">{t("footer.title.privacy")}</h3>
-                            <p><Link className="footer-link" to="/cookie-policy" onClick={this.onNavigateToNewPage}>{t("footer.cookiepolicy")}</Link></p>
+                            <p><Link className="footer-link" to={`/${lang}/cookie-policy`} onClick={this.onNavigateToNewPage}>{t("footer.cookiepolicy")}</Link></p>
                         </div>
                     </div>
                     <div className="row">

@@ -3,7 +3,7 @@ import React from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavDropdown, Image } from 'react-bootstrap';
 import { withTranslation } from 'react-i18next';
-
+import { Link } from 'react-router-dom';
 import '../../css/NavBar.scss';
 
 class NavBar extends React.Component {
@@ -41,16 +41,16 @@ class NavBar extends React.Component {
 
     onChangeLocale = (event) => {
         // Change language
-        this.props.i18n.changeLanguage(event.target.getAttribute("lang"))
+        const newlang= event.target.getAttribute("lang")
+        this.props.i18n.changeLanguage(newlang)
 
-        // Set cookie
-        const days = 30;
-        const expirationDate = new Date();
-        expirationDate.setDate(expirationDate.getDate() + days);
-      
-        const expires = `expires=${expirationDate.toUTCString()}`;
+        const currentPath = window.location.pathname;
 
-        document.cookie = "language=" + event.target.getAttribute("lang") + ";" + ` ${expires};` + " path=/";
+        // Replace the current language part of the URL with the new language
+        const newPath = currentPath.replace(/^\/[a-z]{2}/, `/${newlang}`);
+
+        // Reload the page with the new language
+        window.location.href = newPath;
     }
 
     onNavLinkClick = (event) => {
@@ -82,7 +82,7 @@ class NavBar extends React.Component {
     }
 
     render() {
-        const { t } = this.props;
+        const { t,lang } = this.props;
 
         return (<React.Fragment>
             {/*<div style={{height: "28px", backgroundColor: "#01ffba"}} />*/}
@@ -94,32 +94,35 @@ class NavBar extends React.Component {
 
                     <Nav className="m-auto">  {/* Nav links */}
 
-                        <LinkContainer to="/home" onClick={this.onLogoClick}>
+                        <LinkContainer to={`/${lang}/home`} onClick={this.onLogoClick}>
                             <Navbar.Brand className="m-auto">
                                 <Image src="/spellwarelogo_white_hor.png" className="navbar-logo d-inline-block align-top" alt={t("nav.image.logo.alt")} ref={this.logoRef} />
                             </Navbar.Brand>
                         </LinkContainer>
 
-                        <LinkContainer onClick={this.onNavLinkClick} to="/home">
+                        <LinkContainer onClick={this.onNavLinkClick} to={`/${lang}/home`}>
                             <Nav.Item className="navbar-link m-auto">{t("nav.home")}</Nav.Item>
                         </LinkContainer>
-                        <LinkContainer onClick={this.onNavLinkClick} to="/portfolio">
+                        <LinkContainer onClick={this.onNavLinkClick} to={`/${lang}/portfolio`}>
                             <Nav.Item className="navbar-link m-auto">{t("nav.portfolio")}</Nav.Item>
                         </LinkContainer>
-                        <LinkContainer onClick={this.onNavLinkClick} to="/about">
+                        <LinkContainer onClick={this.onNavLinkClick} to={`/${lang}/about`}>
                             <Nav.Item className="navbar-link m-auto">{t("nav.about")}</Nav.Item>
                         </LinkContainer>
-                        <LinkContainer onClick={this.onNavLinkClick} to="/contact">
+                        <LinkContainer onClick={this.onNavLinkClick} to={`/${lang}/contact`}>
                             <Nav.Item className="navbar-link m-auto">{t("nav.contact")}</Nav.Item>
                         </LinkContainer>
 
                     </Nav>
-                    
-                    {/* Language picker */}
-                    <Nav> 
 
-                        <NavDropdown className="navbar-language-dropdown m-auto" title={<div className="d-inline"><p className="fas fa-globe-africa d-inline lang-picker-globe"/><p className="d-inline">{this.props.i18n.language}</p></div>} alignRight>
-                            {this.state.languages.map((lang) => <NavDropdown.Item onClick={this.onChangeLocale} key={lang} lang={lang}>{t("lang." + lang)}</NavDropdown.Item>)}
+                    {/* Language picker */}
+                    <Nav>
+
+                        <NavDropdown className="navbar-language-dropdown m-auto" title={<div className="d-inline"><p className="fas fa-globe-africa d-inline lang-picker-globe" /><p className="d-inline">{this.props.i18n.language}</p></div>} alignRight>
+                            {this.state.languages.map((lang) =>
+                                <NavDropdown.Item onClick={this.onChangeLocale} key={lang} lang={lang}>{t("lang." + lang)}
+                                </NavDropdown.Item>
+                            )}
                         </NavDropdown>
 
                     </Nav>
