@@ -7,11 +7,16 @@ export default {
 
         return [
             // Add dynamic routes here to prevent 404's
-            { path: "/:lang/home", template: "src/pages/HomePage" },
-            { path: "/:lang/contact", template: "src/pages/ContactPage" },
-            { path: "/:lang/services", template: "src/pages/ServicesPage" },
-            { path: "/:lang/about", template: "src/pages/AboutPage" },
-            { path: "/:lang/portfolio", template: "src/pages/PortfolioPage" },
+            { path: "/en/home", template: "src/pages/HomePage" },
+            { path: "/en/contact", template: "src/pages/ContactPage" },
+            { path: "/en/services", template: "src/pages/ServicesPage" },
+            { path: "/en/about", template: "src/pages/AboutPage" },
+            { path: "/en/portfolio", template: "src/pages/PortfolioPage" },
+            { path: "/nl/home", template: "src/pages/HomePage" },
+            { path: "/nl/contact", template: "src/pages/ContactPage" },
+            { path: "/nl/services", template: "src/pages/ServicesPage" },
+            { path: "/nl/about", template: "src/pages/AboutPage" },
+            { path: "/nl/portfolio", template: "src/pages/PortfolioPage" },
         ]
     },
     plugins: [
